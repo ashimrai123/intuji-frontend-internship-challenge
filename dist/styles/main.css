@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__items {
+  display: flex;
+  list-style: none;
+}
+
+/*# sourceMappingURL=main.css.map */
