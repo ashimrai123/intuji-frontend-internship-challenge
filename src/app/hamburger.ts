@@ -11,7 +11,7 @@ function toggleSidebar() {
     sidebar.style.left = "0";
     toggleValue = true;
   } else {
-    sidebar.style.left = "-23rem";
+    sidebar.style.left = "-30rem";
     toggleValue = false;
   }
 }

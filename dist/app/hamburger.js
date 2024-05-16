@@ -10,7 +10,7 @@ function toggleSidebar() {
         toggleValue = true;
     }
     else {
-        sidebar.style.left = "-23rem";
+        sidebar.style.left = "-30rem";
         toggleValue = false;
     }
 }

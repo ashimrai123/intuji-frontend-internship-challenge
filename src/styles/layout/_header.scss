@@ -1,8 +1,20 @@
 .header {
   display: flex;
+  position: fixed;
+  width: calc(100% - 8rem);
   justify-content: space-between;
-  padding: 1.8rem 4rem;
+  padding: 1.2rem 4rem;
   align-items: center;
+  transition: transform 0.3s ease;
+  &__transparent {
+    background-color: transparent;
+  }
+  &__white {
+    background-color: white;
+  }
+  &__hidden {
+    transform: translateY(-100%);
+  }
 }
 
 .navbar {
@@ -10,8 +22,8 @@
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  position: sticky;
-  background: transparent;
+  transition: background-color 0.3s ease;
+
   &__logo {
     font-size: 1.4rem;
     width: 33%;
@@ -67,7 +79,8 @@
 }
 
 .sidebar {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
+
   position: fixed;
   padding: 6rem 2rem;
   top: 0;
@@ -142,7 +155,8 @@
 
 @media (max-width: 480px) {
   .header {
-    padding: 1.8rem 1.8rem;
+    width: calc(100% - 3.6rem);
+    padding: 0.8rem 1.8rem;
   }
   .navbar {
     &__logo {
@@ -174,7 +188,8 @@
 
 @media (min-width: 480px) and (max-width: 768px) {
   .header {
-    padding: 1.8rem 2.2rem;
+    width: calc(100% - 4.4rem);
+    padding: 0.9rem 2.2rem;
   }
   .navbar {
     &__logo {
@@ -214,7 +229,8 @@
 
 @media (min-width: 768px) and (max-width: 834px) {
   .header {
-    padding: 1.8rem 2.8rem;
+    width: calc(100% - 5.6rem);
+    padding: 1rem 2.8rem;
   }
   .navbar {
     &__logo {
@@ -243,7 +259,8 @@
 
 @media (min-width: 834px) and (max-width: 1024px) {
   .header {
-    padding: 1.8rem 3rem;
+    width: calc(100% - 6rem);
+    padding: 1.1rem 3rem;
   }
   .navbar {
     &__logo {

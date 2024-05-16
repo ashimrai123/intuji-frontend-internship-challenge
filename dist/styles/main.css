@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: sans-serif, Arial, Helvetica;
+  font-family: "Manrope", sans-serif;
 }
 
 button {
@@ -17,9 +18,21 @@ a {
 
 .header {
   display: flex;
+  position: fixed;
+  width: calc(100% - 8rem);
   justify-content: space-between;
-  padding: 1.8rem 4rem;
+  padding: 1.2rem 4rem;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+.header__transparent {
+  background-color: transparent;
+}
+.header__white {
+  background-color: white;
+}
+.header__hidden {
+  transform: translateY(-100%);
 }
 
 .navbar {
@@ -27,8 +40,7 @@ a {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  position: sticky;
-  background: transparent;
+  transition: background-color 0.3s ease;
 }
 .navbar__logo {
   font-size: 1.4rem;
@@ -84,7 +96,7 @@ a {
 }
 
 .sidebar {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: fixed;
   padding: 6rem 2rem;
   top: 0;
@@ -152,7 +164,8 @@ a {
 
 @media (max-width: 480px) {
   .header {
-    padding: 1.8rem 1.8rem;
+    width: calc(100% - 3.6rem);
+    padding: 0.8rem 1.8rem;
   }
   .navbar__logo {
     font-size: 1rem;
@@ -178,7 +191,8 @@ a {
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .header {
-    padding: 1.8rem 2.2rem;
+    width: calc(100% - 4.4rem);
+    padding: 0.9rem 2.2rem;
   }
   .navbar__logo {
     font-size: 1.15rem;
@@ -211,7 +225,8 @@ a {
 }
 @media (min-width: 768px) and (max-width: 834px) {
   .header {
-    padding: 1.8rem 2.8rem;
+    width: calc(100% - 5.6rem);
+    padding: 1rem 2.8rem;
   }
   .navbar__logo {
     font-size: 1.15rem;
@@ -235,7 +250,8 @@ a {
 }
 @media (min-width: 834px) and (max-width: 1024px) {
   .header {
-    padding: 1.8rem 3rem;
+    width: calc(100% - 6rem);
+    padding: 1.1rem 3rem;
   }
   .navbar__logo {
     font-size: 1.25rem;
@@ -266,6 +282,55 @@ a {
   .sidebar {
     display: none;
   }
+}
+.hero {
+  background: linear-gradient(to right, #c9e7f2, #91cfe5);
+  display: flex;
+  padding: 7rem 4rem;
+  align-items: center;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+.hero__text__heading {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.hero__text__body {
+  font-size: 1.5rem;
+  color: #64607d;
+}
+.hero__text__links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.hero__text__links__start {
+  background-color: #3734a9;
+  padding: 1rem;
+  border-radius: 3rem;
+  color: white;
+}
+.hero__text__links__play {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hero__text__links__play__img {
+  height: 1.5rem;
+  background-color: #22d497;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.hero__img {
+  width: 50%;
+  height: 100%;
+}
+.hero__img__image {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
