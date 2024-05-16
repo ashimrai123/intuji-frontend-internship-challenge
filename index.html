@@ -4,25 +4,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="/dist/styles/main.css" />
+    <title>Intuji</title>
+    <link rel="stylesheet" href="./dist/styles/main.css" />
   </head>
   <body>
-    <header>
+    <!--------------- Navbar Section --------------------------------->
+    <header class="header">
       <div class="navbar">
-        <h1 class="navbar_logo">AR SHAKIR</h1>
+        <a href="#" class="navbar__logo">AR SHAKIR</a>
         <ul class="navbar__items">
-          <li>Product</li>
-          <li>Template</li>
-          <li>Blog</li>
-          <li>Pricing</li>
+          <li><a href="#" class="navbar__items__item">Product</a></li>
+          <li><a href="#" class="navbar__items__item">Template</a></li>
+          <li><a href="#" class="navbar__items__item">Blog</a></li>
+          <li><a href="#" class="navbar__items__item">Pricing</a></li>
         </ul>
-        <div class="navbar_sign">
-          <button>Sign in</button>
-          <button>Start free</button>
+        <div class="navbar__sign">
+          <a href="#" class="navbar__sign__signIn">Sign in</a>
+          <a href="#" class="navbar__sign__startFree">Start free</a>
         </div>
       </div>
+      <img
+        src="./public/images/header/hamburger.svg"
+        class="hamburger"
+        id="hamburger"
+      />
+      <div class="sidebar" id="sidebar">
+        <div>
+          <a href="#" class="sidebar__logo">AR SHAKIR</a>
+          <button class="sidebar__cross" id="sidebarCross">X</button>
+        </div>
+
+        <ul class="sidebar__items">
+          <li>
+            <a href="#" class="sidebar__items__item">Product</a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__items__item">Template</a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__items__item">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="sidebar__items__item">Pricing</a>
+          </li>
+
+          <a href="#" class="sidebar__sign">Sign in</a>
+          <a href="#" class="sidebar__start">Start free</a>
+        </ul>
+      </div>
     </header>
+    <!--------------- Hero Section --------------------------------->
+    <div class="hero">
+      <div></div>
+    </div>
     <footer></footer>
+    <script src="./dist/app/hamburger.js"></script>
   </body>
 </html>

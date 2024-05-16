@@ -1,10 +1,284 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.8rem 4rem;
+  align-items: center;
+}
+
 .navbar {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  align-items: baseline;
+  position: sticky;
+  background: transparent;
+  &__logo {
+    font-size: 1.4rem;
+    width: 33%;
+    font-weight: bold;
+  }
   &__items {
     display: flex;
+    justify-content: center;
     list-style: none;
+    gap: 1rem;
+    width: 33%;
+    align-items: center;
+    &__item {
+      align-items: center;
+    }
+  }
+  &__sign {
+    display: flex;
+    justify-content: end;
+    gap: 2.5rem;
+    width: 33%;
+    align-items: center;
+
+    &__signIn {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: black;
+    }
+    &__startFree {
+      background-color: #4f46ba;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      cursor: pointer;
+    }
+    &__startFree:hover {
+      background-color: hsl(249, 54%, 39%);
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: #4f46ba;
+  padding: 4px;
+  cursor: pointer;
+}
+.hamburger:hover {
+  background-color: hsl(249, 54%, 39%);
+}
+
+.sidebar {
+  background-color: white;
+  position: fixed;
+  padding: 6rem 2rem;
+  top: 0;
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  &__logo {
+    top: 3rem;
+    position: absolute;
+    font-weight: bold;
+  }
+
+  &__cross {
+    top: 2rem;
+    position: absolute;
+    right: 1rem;
+    border: none;
+    background-color: #4f46ba;
+    color: white;
+    padding: 9px 14px;
+    font-size: 1.25rem;
+    border-radius: 1%;
+  }
+  &__cross:hover {
+    background-color: hsl(249, 54%, 39%);
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    // gap: 0.5rem;
+    width: 100%;
+    // &__list {
+    //   width: 100%;
+    // }
+    &__item {
+      display: block;
+      // width: 100%;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    &__item:hover {
+      background-color: #4f46ba;
+      color: white;
+    }
+  }
+  &__sign {
+    padding: 0.5rem;
+    display: flex;
+    color: white;
+    font-size: 0.9rem;
+    justify-content: center;
+    background-color: #4f46ba;
+    margin: 1rem 1.5rem;
+  }
+  &__start {
+    padding: 0.5rem;
+    color: white;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    background-color: #4f46ba;
+    margin: 0 1.5rem;
+  }
+  &__sign:hover,
+  &__start:hover {
+    background-color: hsl(249, 54%, 39%);
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1.8rem 1.8rem;
+  }
+  .navbar {
+    &__logo {
+      font-size: 1rem;
+      width: 100%;
+    }
+    &__items {
+      display: none;
+
+      &__item {
+        font-size: 0.8rem;
+      }
+    }
+    &__sign {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    display: flex;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .sidebar {
+    width: 14rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .header {
+    padding: 1.8rem 2.2rem;
+  }
+  .navbar {
+    &__logo {
+      font-size: 1.15rem;
+    }
+    &__items {
+      display: none;
+
+      &__item {
+        font-size: 0.8rem;
+      }
+    }
+    &__sign {
+      display: none;
+
+      gap: 1rem;
+      &__signIn {
+        font-size: 0.8rem;
+      }
+      &__startFree {
+        padding: 1rem 1.6rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .hamburger {
+    display: flex;
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+
+  .sidebar {
+    width: 15rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 834px) {
+  .header {
+    padding: 1.8rem 2.8rem;
+  }
+  .navbar {
+    &__logo {
+      font-size: 1.15rem;
+    }
+    &__items {
+      &__item {
+        font-size: 0.8rem;
+      }
+    }
+    &__sign {
+      gap: 1.2rem;
+      &__signIn {
+        font-size: 0.8rem;
+      }
+      &__startFree {
+        padding: 1rem 1.6rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 834px) and (max-width: 1024px) {
+  .header {
+    padding: 1.8rem 3rem;
+  }
+  .navbar {
+    &__logo {
+      font-size: 1.25rem;
+    }
+    &__items {
+      &__item {
+        font-size: 0.9rem;
+      }
+    }
+    &__sign {
+      gap: 1.7rem;
+
+      &__signIn {
+        font-size: 0.9rem;
+      }
+      &__startFree {
+        padding: 1rem 1.7rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sidebar {
+    display: none;
   }
 }
