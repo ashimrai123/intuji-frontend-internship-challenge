@@ -742,5 +742,89 @@ li {
 .statistics__users__detail__img, .statistics__reviews__detail__img, .statistics__transactions__detail__img {
   height: 1.1rem;
 }
+.blogs {
+  padding: 8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafbff;
+  gap: 4rem;
+}
+.blogs__head {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.blogs__top {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  transition: scale 0.3s ease, background-color 0.3s ease;
+}
+.blogs__top__text {
+  width: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.blogs__top__text__subtitle {
+  font-weight: 600;
+}
+.blogs__top__text__heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.blogs__top__text__readMore {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.blogs__top__text__readMore__text {
+  font-weight: 600;
+}
+.blogs__top__text__readMore__img {
+  height: 0.8rem;
+}
+.blogs__top__img {
+  width: 30rem;
+}
+.blogs__top:hover {
+  scale: 1.02;
+  background-color: #e5e5e5;
+}
+.blogs__bot {
+  display: flex;
+  gap: 2rem;
+}
+.blogs__bot__first, .blogs__bot__second, .blogs__bot__third {
+  padding: 1rem 0rem 1rem 1rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  height: 26rem;
+  background-color: white;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.blogs__bot__first__text, .blogs__bot__second__text, .blogs__bot__third__text {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.blogs__bot__first__text__subtitle, .blogs__bot__second__text__subtitle, .blogs__bot__third__text__subtitle {
+  font-weight: 600;
+}
+.blogs__bot__first__text__heading, .blogs__bot__second__text__heading, .blogs__bot__third__text__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.blogs__bot__first:hover, .blogs__bot__second:hover, .blogs__bot__third:hover {
+  transform: translateY(-1rem);
+  background-color: #e5e5e5;
+}
 
 /*# sourceMappingURL=main.css.map */
