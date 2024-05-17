@@ -1,0 +1,101 @@
+.faq {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  &__head {
+    font-size: 4rem;
+    font-weight: 700;
+    width: 32rem;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    &__questions {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      &__1,
+      &__2,
+      &__3,
+      &__4,
+      &__5 {
+        transition: height 0.3s ease;
+        height: 3rem;
+        display: block;
+        overflow: hidden;
+        padding: 1rem;
+        border: 1px solid #cfcfcf;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &__head {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &__quest {
+            font-size: 1.3rem;
+            font-weight: 800;
+          }
+          &__trigger {
+            border: none;
+            font-size: 2rem;
+            padding: 0 0.8rem;
+            border-radius: 50%;
+            background-color: #cfcfcf;
+          }
+        }
+        &__body {
+        }
+      }
+      &__2 {
+      }
+    }
+    &__moreQuest {
+      border: 1px solid #cfcfcf;
+      padding: 2rem;
+      height: 30rem;
+      width: 24rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 1rem;
+
+      &__top {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        &__img {
+          height: 3.4rem;
+        }
+        &__head {
+          font-size: 1.5rem;
+          font-weight: 600;
+          text-align: center;
+        }
+        &__body {
+          text-align: center;
+          font-weight: 600;
+        }
+      }
+      &__mail {
+        display: flex;
+        justify-content: center;
+        background-color: #ff7f5c;
+
+        padding: 2rem 5rem;
+        transition: background-color 0.3s ease;
+        color: white;
+      }
+      &__mail:hover {
+        background-color: #df6a49;
+      }
+    }
+  }
+}

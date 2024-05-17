@@ -827,4 +827,94 @@ li {
   background-color: #e5e5e5;
 }
 
+.faq {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.faq__head {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 32rem;
+}
+.faq__body {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.faq__body__questions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.faq__body__questions__1, .faq__body__questions__2, .faq__body__questions__3, .faq__body__questions__4, .faq__body__questions__5 {
+  transition: height 0.3s ease;
+  height: 3rem;
+  display: block;
+  overflow: hidden;
+  padding: 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.faq__body__questions__1__head, .faq__body__questions__2__head, .faq__body__questions__3__head, .faq__body__questions__4__head, .faq__body__questions__5__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq__body__questions__1__head__quest, .faq__body__questions__2__head__quest, .faq__body__questions__3__head__quest, .faq__body__questions__4__head__quest, .faq__body__questions__5__head__quest {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.faq__body__questions__1__head__trigger, .faq__body__questions__2__head__trigger, .faq__body__questions__3__head__trigger, .faq__body__questions__4__head__trigger, .faq__body__questions__5__head__trigger {
+  border: none;
+  font-size: 2rem;
+  padding: 0 0.8rem;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+}
+.faq__body__moreQuest {
+  border: 1px solid #cfcfcf;
+  padding: 2rem;
+  height: 30rem;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+.faq__body__moreQuest__top {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.faq__body__moreQuest__top__img {
+  height: 3.4rem;
+}
+.faq__body__moreQuest__top__head {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.faq__body__moreQuest__top__body {
+  text-align: center;
+  font-weight: 600;
+}
+.faq__body__moreQuest__mail {
+  display: flex;
+  justify-content: center;
+  background-color: #ff7f5c;
+  padding: 2rem 5rem;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+.faq__body__moreQuest__mail:hover {
+  background-color: #df6a49;
+}
+
 /*# sourceMappingURL=main.css.map */
