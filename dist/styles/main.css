@@ -917,4 +917,30 @@ li {
   background-color: #df6a49;
 }
 
+.started {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 2rem 4rem;
+  background-color: #3734a9;
+  border-radius: 1rem;
+  padding: 8rem 0rem;
+}
+.started__head {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  width: 50rem;
+}
+.started__button {
+  padding: 1rem 2rem;
+  color: white;
+  background-color: #ff7f5c;
+  border-radius: 0.5rem;
+  border-style: none;
+}
+
 /*# sourceMappingURL=main.css.map */
