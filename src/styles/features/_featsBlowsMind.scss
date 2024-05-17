@@ -1,0 +1,65 @@
+.feats {
+  &__blowsMind {
+    margin: 0 -4rem;
+    padding: 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #c9e7f2;
+    gap: 3rem;
+    &__head {
+      font-size: 4.2rem;
+      font-weight: 700;
+    }
+    &__body {
+      width: 35rem;
+    }
+    &__icons {
+      display: flex;
+      gap: 2.5rem;
+      &__first,
+      &__second {
+        width: 20rem;
+        padding: 4rem 2rem 3rem 2rem;
+        background-color: white;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        transition: scale 0.2s ease-in, background-color 0.2s ease-in-out;
+        &__img {
+          width: 4rem;
+        }
+        &__head {
+          font-size: 1.4rem;
+          font-weight: 700;
+        }
+        &__body {
+        }
+      }
+      &__first:hover,
+      &__second:hover {
+        scale: 1.05;
+        background-color: lightblue;
+      }
+      &__third {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        width: 20rem;
+        &__top,
+        &__bottom {
+          background-color: white;
+          padding: 3.2rem 2rem;
+          font-size: 1.4rem;
+          font-weight: 700;
+          transition: scale 0.2s ease-in, background-color 0.2s ease-in-out;
+        }
+
+        &__top:hover,
+        &__bottom:hover {
+          scale: 1.05;
+          background-color: lightblue;
+        }
+      }
+    }
+  }
+}

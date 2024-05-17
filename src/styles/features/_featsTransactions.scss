@@ -1,0 +1,53 @@
+.feats {
+  &__transactions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 25rem;
+      &__subtitle {
+        color: #3734a9;
+        font-weight: 700;
+      }
+      &__head {
+        font-size: 3.2rem;
+        font-weight: 700;
+      }
+      &__body {
+        padding-bottom: 2rem;
+      }
+      &__quote {
+        position: relative;
+        width: 23rem;
+        background-color: #c4c4c4;
+        height: 9 rem;
+        padding: 2rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &__img {
+          height: 1.5rem;
+          padding: 0.65rem 0.5rem 0.7rem 1rem;
+          border-radius: 50%;
+          background-color: black;
+          position: absolute;
+          top: -1.5rem;
+        }
+        &__text {
+          font-size: 1rem;
+        }
+        &__author {
+        }
+      }
+      &__quote:hover {
+        background-color: #989898;
+      }
+    }
+    &__img {
+    }
+  }
+}

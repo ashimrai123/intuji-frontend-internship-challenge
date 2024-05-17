@@ -397,6 +397,63 @@ li {
   object-fit: contain;
 }
 
+.feats__blowsMind {
+  margin: 0 -4rem;
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #c9e7f2;
+  gap: 3rem;
+}
+.feats__blowsMind__head {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.feats__blowsMind__body {
+  width: 35rem;
+}
+.feats__blowsMind__icons {
+  display: flex;
+  gap: 2.5rem;
+}
+.feats__blowsMind__icons__first, .feats__blowsMind__icons__second {
+  width: 20rem;
+  padding: 4rem 2rem 3rem 2rem;
+  background-color: white;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: scale 0.2s ease-in, background-color 0.2s ease-in-out;
+}
+.feats__blowsMind__icons__first__img, .feats__blowsMind__icons__second__img {
+  width: 4rem;
+}
+.feats__blowsMind__icons__first__head, .feats__blowsMind__icons__second__head {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.feats__blowsMind__icons__first:hover, .feats__blowsMind__icons__second:hover {
+  scale: 1.05;
+  background-color: lightblue;
+}
+.feats__blowsMind__icons__third {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 20rem;
+}
+.feats__blowsMind__icons__third__top, .feats__blowsMind__icons__third__bottom {
+  background-color: white;
+  padding: 3.2rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: scale 0.2s ease-in, background-color 0.2s ease-in-out;
+}
+.feats__blowsMind__icons__third__top:hover, .feats__blowsMind__icons__third__bottom:hover {
+  scale: 1.05;
+  background-color: lightblue;
+}
+
 .feats__payments {
   display: flex;
   align-items: center;
@@ -517,7 +574,7 @@ li {
   padding: 5rem 3rem 3rem 3rem;
   border-radius: 10%;
   position: relative;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .feats__pf__icons__connect__no, .feats__pf__icons__review__no, .feats__pf__icons__income__no {
   position: absolute;
@@ -541,6 +598,54 @@ li {
 .feats__pf__icons__connect:hover, .feats__pf__icons__review:hover, .feats__pf__icons__income:hover {
   transform: translateY(-1rem);
   background-color: #e5e5e5;
+}
+
+.feats__transactions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feats__transactions__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 25rem;
+}
+.feats__transactions__text__subtitle {
+  color: #3734a9;
+  font-weight: 700;
+}
+.feats__transactions__text__head {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.feats__transactions__text__body {
+  padding-bottom: 2rem;
+}
+.feats__transactions__text__quote {
+  position: relative;
+  width: 23rem;
+  background-color: #c4c4c4;
+  height: 9 rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.feats__transactions__text__quote__img {
+  height: 1.5rem;
+  padding: 0.65rem 0.5rem 0.7rem 1rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: -1.5rem;
+}
+.feats__transactions__text__quote__text {
+  font-size: 1rem;
+}
+.feats__transactions__text__quote:hover {
+  background-color: #989898;
 }
 
 /*# sourceMappingURL=main.css.map */
