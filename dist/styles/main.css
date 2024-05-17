@@ -301,7 +301,7 @@ li {
   padding: 6rem 4rem 3rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
 }
 .footer__top {
   display: flex;
@@ -412,20 +412,29 @@ li {
 }
 .hero__text__links__start {
   background-color: #3734a9;
-  padding: 1rem;
+  padding: 1.3rem 3rem;
   border-radius: 3rem;
   color: white;
+  transition: background-color 0.3s ease;
+}
+.hero__text__links__start:hover {
+  background-color: #1d1a7d;
 }
 .hero__text__links__play {
   display: flex;
   align-items: center;
   gap: 1rem;
+  color: #3734a9;
+  transition: background-color 0.3s ease;
 }
 .hero__text__links__play__img {
   height: 1.5rem;
   background-color: #22d497;
   border-radius: 50%;
-  padding: 1rem;
+  padding: 1.3rem;
+}
+.hero__text__links__play__img:hover {
+  background-color: #249f74;
 }
 .hero__text__checks {
   display: flex;

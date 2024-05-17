@@ -24,19 +24,29 @@
       gap: 4rem;
       &__start {
         background-color: #3734a9;
-        padding: 1rem;
+        padding: 1.3rem 3rem;
         border-radius: 3rem;
         color: white;
+        transition: background-color 0.3s ease;
+      }
+      &__start:hover {
+        background-color: #1d1a7d;
       }
       &__play {
         display: flex;
         align-items: center;
         gap: 1rem;
+        color: #3734a9;
+        transition: background-color 0.3s ease;
+
         &__img {
           height: 1.5rem;
           background-color: #22d497;
           border-radius: 50%;
-          padding: 1rem;
+          padding: 1.3rem;
+        }
+        &__img:hover {
+          background-color: #249f74;
         }
       }
     }
