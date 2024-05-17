@@ -1,12 +1,12 @@
 //Display white background in navbar when we have scrolled a little Y distance
-const header = document.getElementById("header");
+const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
-    header?.classList.add("header__white");
-    header?.classList.remove("header__transparent");
+    navbar?.classList.add("navbar__white");
+    navbar?.classList.remove("navbar__transparent");
   } else {
-    header?.classList.add("header__transparent");
-    header?.classList.remove("header__white");
+    navbar?.classList.add("navbar__transparent");
+    navbar?.classList.remove("navbar__white");
   }
 });
 
@@ -16,9 +16,9 @@ window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY || document.documentElement.scrollTop;
   if (scrollTop > lastScrollTop && scrollTop > yOffsetThreshold) {
     //Scroll down
-    header?.classList.add("header__hidden");
+    navbar?.classList.add("navbar__hidden");
   } else {
-    header?.classList.remove("header__hidden");
+    navbar?.classList.remove("navbar__hidden");
   }
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });

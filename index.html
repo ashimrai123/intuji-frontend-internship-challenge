@@ -10,8 +10,10 @@
   <body>
     <!--------------- Navbar Section --------------------------------->
     <header class="header" id="header">
-      <div class="navbar">
-        <a href="#" class="navbar__logo">AR SHAKIR</a>
+      <div class="navbar" id="navbar">
+        <div class="navbar__logo">
+          <a href="#">AR SHAKIR</a>
+        </div>
         <ul class="navbar__items">
           <li><a href="#" class="navbar__items__item">Product</a></li>
           <li><a href="#" class="navbar__items__item">Template</a></li>
@@ -22,12 +24,12 @@
           <a href="#" class="navbar__sign__signIn">Sign in</a>
           <a href="#" class="navbar__sign__startFree">Start free</a>
         </div>
+        <img
+          src="./public/images/header/hamburger.svg"
+          class="hamburger"
+          id="hamburger"
+        />
       </div>
-      <img
-        src="./public/images/header/hamburger.svg"
-        class="hamburger"
-        id="hamburger"
-      />
       <div class="sidebar" id="sidebar">
         <div>
           <a href="#" class="sidebar__logo">AR SHAKIR</a>
@@ -74,9 +76,24 @@
             <p>See How It Works</p>
           </a>
         </div>
-        <div class="hero__text__checks">
-          <ul></ul>
-        </div>
+        <ul class="hero__text__checks">
+          <li class="hero__text__checks__register">
+            <img
+              src="./public/images/hero/check.svg"
+              alt=""
+              class="hero__text__checks__register__img"
+            />
+            <p>Free Register</p>
+          </li>
+          <li class="hero__text__checks__service">
+            <img
+              src="./public/images/hero/check.svg"
+              alt=""
+              class="hero__text__checks__service__img"
+            />
+            <p>Great Service</p>
+          </li>
+        </ul>
       </div>
       <div class="hero__img">
         <img
@@ -85,6 +102,55 @@
           alt="card image"
         />
       </div>
+    </div>
+    <!--------------- Companies Section --------------------------------->
+    <div class="company">
+      <div class="company__subhead">
+        Over 32k+ software businesses growing with AR Shakir.
+      </div>
+      <div class="company__list">
+        <img
+          class="company__list__img"
+          src="./public/images/company/zeppelin.svg"
+          alt=""
+        />
+        <img
+          class="company__list__img"
+          src="./public/images/company/oracle.svg"
+          alt=""
+        />
+        <img
+          class="company__list__img"
+          src="./public/images/company/morpheus.svg"
+          alt=""
+        />
+        <img
+          class="company__list__img"
+          src="./public/images/company/samsung.svg"
+          alt=""
+        />
+        <img
+          class="company__list__img"
+          src="./public/images/company/monday.svg"
+          alt=""
+        />
+        <img
+          class="company__list__img"
+          src="./public/images/company/segment.svg"
+          alt=""
+        />
+        <img
+          class="company__list__img"
+          src="./public/images/company/protonet.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!--------------- Features Section --------------------------------->
+    <div class="features">
+      <div class="features__portfolio"></div>
+      <div class="features__payments"></div>
+      <div class="features__transactions"></div>
     </div>
     <footer></footer>
     <script src="./dist/app/hamburger.js"></script>
