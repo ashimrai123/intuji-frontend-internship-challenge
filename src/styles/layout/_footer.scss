@@ -1,0 +1,102 @@
+.footer {
+  padding: 6rem 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__top {
+    display: flex;
+    gap: 5rem;
+    align-items: start;
+    border-bottom: 2px solid #e5e5ea;
+    padding-bottom: 5rem;
+    &__about {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      &__logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      &__text {
+        color: #757095;
+      }
+      &__socials {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        &__linkedin,
+        &__messenger,
+        &__twitter,
+        &__meta {
+        }
+        &__linkedin:hover,
+        &__messenger:hover,
+        &__twitter:hover,
+        &__meta:hover {
+        }
+      }
+    }
+    &__company,
+    &__resources {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 15rem;
+
+      &__head {
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+      &__body {
+        font-weight: 500;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+    &__newsletter {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      &__head {
+        font-size: 1.3rem;
+        font-weight: 700;
+      }
+      &__email {
+        display: flex;
+        &__input {
+          color: #3734a9;
+          padding: 1rem;
+          outline: none;
+          border: none;
+          caret-color: #3734a9;
+
+          //   placehol
+        }
+        &__input::placeholder {
+          color: #757095;
+        }
+        &__sub {
+          border: none;
+          padding: 0.6rem 1.5rem;
+          background-color: #3734a9;
+          color: white;
+          transition: background-color 0.3 ease;
+        }
+        &__sub:hover {
+          background-color: #1611a8;
+        }
+      }
+      &__comment {
+        color: #757095;
+        width: 16rem;
+      }
+    }
+  }
+  &__bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
