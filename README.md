@@ -20,3 +20,8 @@ Features**Portfolio
 Features**Payments
 Features**Transactions
 Features**BlowsMind
+
+TECHNOLOGIES USED:
+HTML
+CSS (Saas preprocessor)
+JavaScript (TypeScript)

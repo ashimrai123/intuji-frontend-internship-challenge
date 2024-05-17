@@ -1,0 +1,67 @@
+.tes {
+  padding: 3rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  &__img {
+    position: absolute;
+    right: 8rem;
+  }
+  &__head {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+  &__body {
+    width: 34rem;
+  }
+  &__slider {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    &__card1,
+    &__card2,
+    &__card3 {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-top: 2rem;
+      border: 1px solid #cfcfcf;
+      border-radius: 1rem;
+      padding: 2rem;
+      scale: 0.95;
+
+      transition: scale 0.3s ease, background-color 0.3s ease;
+      &__quote {
+        height: 1.5rem;
+        padding: 0.65rem 0.5rem 0.7rem 1rem;
+        border-radius: 50%;
+        background-color: black;
+        position: absolute;
+        top: -1.5rem;
+      }
+      &__text {
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &__comment {
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+        &__author {
+          font-weight: 600;
+        }
+      }
+      &__img {
+        width: 15rem;
+      }
+    }
+    &__card1:hover,
+    &__card2:hover,
+    &__card3:hover {
+      scale: 1;
+      background-color: #e5e5e5;
+    }
+  }
+}

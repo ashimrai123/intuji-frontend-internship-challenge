@@ -395,11 +395,15 @@ li {
 .company__list__img {
   height: 1.2rem;
   object-fit: contain;
+  transition: scale 0.3s ease;
+}
+.company__list__img:hover {
+  scale: 1.08;
 }
 
 .feats__blowsMind {
   margin: 0 -4rem;
-  padding: 6rem 4rem;
+  padding: 6rem 4rem 8rem 4rem;
   display: flex;
   flex-direction: column;
   background-color: #c9e7f2;
@@ -646,6 +650,97 @@ li {
 }
 .feats__transactions__text__quote:hover {
   background-color: #989898;
+}
+.tes {
+  padding: 3rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.tes__img {
+  position: absolute;
+  right: 8rem;
+}
+.tes__head {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.tes__body {
+  width: 34rem;
+}
+.tes__slider {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+}
+.tes__slider__card1, .tes__slider__card2, .tes__slider__card3 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 2rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 1rem;
+  padding: 2rem;
+  scale: 0.95;
+  transition: scale 0.3s ease, background-color 0.3s ease;
+}
+.tes__slider__card1__quote, .tes__slider__card2__quote, .tes__slider__card3__quote {
+  height: 1.5rem;
+  padding: 0.65rem 0.5rem 0.7rem 1rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: -1.5rem;
+}
+.tes__slider__card1__text, .tes__slider__card2__text, .tes__slider__card3__text {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.tes__slider__card1__text__comment, .tes__slider__card2__text__comment, .tes__slider__card3__text__comment {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.tes__slider__card1__text__author, .tes__slider__card2__text__author, .tes__slider__card3__text__author {
+  font-weight: 600;
+}
+.tes__slider__card1__img, .tes__slider__card2__img, .tes__slider__card3__img {
+  width: 15rem;
+}
+.tes__slider__card1:hover, .tes__slider__card2:hover, .tes__slider__card3:hover {
+  scale: 1;
+  background-color: #e5e5e5;
+}
+
+.statistics {
+  background-color: #3734a9;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.statistics__heading {
+  width: 9rem;
+}
+.statistics__line {
+  border: 2px solid #3d3d3d;
+  height: 13rem;
+  position: absolute;
+  left: 20rem;
+}
+.statistics__users__num, .statistics__reviews__num, .statistics__transactions__num {
+  font-size: 3.5rem;
+}
+.statistics__users__detail, .statistics__reviews__detail, .statistics__transactions__detail {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.statistics__users__detail__img, .statistics__reviews__detail__img, .statistics__transactions__detail__img {
+  height: 1.1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
