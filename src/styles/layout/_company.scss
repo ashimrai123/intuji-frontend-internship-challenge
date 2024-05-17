@@ -1,20 +1,22 @@
 .company {
-  padding: 2rem 4rem;
+  background-color: #f5f6f8;
+  padding: 4rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   &__subhead {
     font-size: 1.7rem;
     text-align: center;
   }
 
   &__list {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+    justify-content: space-between;
 
     &__img {
       height: 1.2rem;

@@ -27,6 +27,7 @@ li {
 }
 
 .navbar {
+  z-index: 100;
   position: fixed;
   top: 0;
   width: calc(100% - 8rem);
@@ -372,26 +373,174 @@ li {
 }
 
 .company {
-  padding: 2rem 4rem;
+  background-color: #f5f6f8;
+  padding: 4rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .company__subhead {
   font-size: 1.7rem;
   text-align: center;
 }
 .company__list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center;
+  justify-content: space-between;
 }
 .company__list__img {
   height: 1.2rem;
   object-fit: contain;
+}
+
+.feats__payments {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+.feats__payments__img {
+  animation: bounce 1.5s ease-in-out infinite;
+}
+.feats__payments__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.feats__payments__text__subtitle {
+  font-weight: 700;
+  color: #3734a9;
+}
+.feats__payments__text__head {
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+.feats__payments__text__body {
+  color: #505887;
+}
+.feats__payments__text__line {
+  border: 2px solid #c4c4c4;
+}
+.feats__payments__text__lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.feats__payments__text__lists__list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.feats__payments__text__lists__list__check {
+  height: 1rem;
+  background-color: #fdbc64;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(14%);
+  }
+  50% {
+    transform: translateY(11%);
+  }
+  100% {
+    transform: translateY(14%);
+  }
+}
+.feats {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 4rem;
+  background-color: #fafbff;
+}
+.feats__pf__head {
+  padding: 1rem 0 5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.feats__pf__head__topic {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  gap: 1.3rem;
+}
+.feats__pf__head__topic__heading {
+  font-size: 3.8rem;
+  font-weight: bold;
+}
+.feats__pf__head__topic__body {
+  font-size: 1rem;
+}
+.feats__pf__head__quote {
+  position: relative;
+  width: 23rem;
+  background-color: #c4c4c4;
+  height: 9 rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.feats__pf__head__quote__img {
+  height: 1.5rem;
+  padding: 0.65rem 0.5rem 0.7rem 1rem;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: -1.5rem;
+}
+.feats__pf__head__quote__text {
+  font-size: 1rem;
+}
+.feats__pf__head__quote:hover {
+  background-color: #989898;
+}
+.feats__pf__icons {
+  display: flex;
+  gap: 2rem;
+}
+.feats__pf__icons__connect, .feats__pf__icons__review, .feats__pf__icons__income {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 5rem 3rem 3rem 3rem;
+  border-radius: 10%;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.feats__pf__icons__connect__no, .feats__pf__icons__review__no, .feats__pf__icons__income__no {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.feats__pf__icons__connect__icon, .feats__pf__icons__review__icon, .feats__pf__icons__income__icon {
+  width: 4rem;
+}
+.feats__pf__icons__connect__head, .feats__pf__icons__review__head, .feats__pf__icons__income__head {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.feats__pf__icons__connect__body, .feats__pf__icons__review__body, .feats__pf__icons__income__body {
+  text-align: center;
+  color: #757095;
+}
+.feats__pf__icons__connect:hover, .feats__pf__icons__review:hover, .feats__pf__icons__income:hover {
+  transform: translateY(-1rem);
+  background-color: #e5e5e5;
 }
 
 /*# sourceMappingURL=main.css.map */

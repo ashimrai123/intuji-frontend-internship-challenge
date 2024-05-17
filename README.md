@@ -11,3 +11,12 @@ breakpoints:
 @media (min-width: 481px) and (max-width: 768px)
 
 @media (max-width: 480px)
+
+PAGE SECTIONS:
+Navbar
+Hero
+Company
+Features**Portfolio
+Features**Payments
+Features**Transactions
+Features**BlowsMind

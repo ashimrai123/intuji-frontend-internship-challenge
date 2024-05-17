@@ -1,0 +1,101 @@
+.feats {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 4rem;
+  background-color: #fafbff;
+
+  &__pf {
+    &__head {
+      padding: 1rem 0 5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      &__topic {
+        display: flex;
+        flex-direction: column;
+        width: 32rem;
+        gap: 1.3rem;
+        &__heading {
+          font-size: 3.8rem;
+          font-weight: bold;
+        }
+        &__body {
+          font-size: 1rem;
+        }
+      }
+      &__quote {
+        position: relative;
+        width: 23rem;
+        background-color: #c4c4c4;
+        height: 9 rem;
+        padding: 2rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &__img {
+          height: 1.5rem;
+          padding: 0.65rem 0.5rem 0.7rem 1rem;
+          border-radius: 50%;
+          background-color: black;
+          position: absolute;
+          top: -1.5rem;
+        }
+        &__text {
+          font-size: 1rem;
+        }
+        &__author {
+        }
+      }
+      &__quote:hover {
+        background-color: #989898;
+      }
+    }
+    &__icons {
+      display: flex;
+      gap: 2rem;
+
+      &__connect,
+      &__review,
+      &__income {
+        background-color: #ffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 5rem 3rem 3rem 3rem;
+        border-radius: 10%;
+        position: relative;
+        &__no {
+          position: absolute;
+          top: 1rem;
+          left: 2rem;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+        &__icon {
+          width: 4rem;
+        }
+        &__head {
+          font-size: 2rem;
+          text-align: center;
+          font-weight: bold;
+        }
+
+        &__body {
+          text-align: center;
+          color: #757095;
+        }
+        transition: transform 0.3s ease;
+      }
+      &__connect:hover,
+      &__review:hover,
+      &__income:hover {
+        transform: translateY(-1rem);
+        background-color: #e5e5e5;
+      }
+    }
+  }
+}

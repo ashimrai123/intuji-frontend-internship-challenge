@@ -1,0 +1,60 @@
+.feats {
+  &__payments {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    // justify-content: ;
+    padding-top: 5rem;
+
+    &__img {
+      animation: bounce 1.5s ease-in-out infinite;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      &__subtitle {
+        font-weight: 700;
+        color: #3734a9;
+      }
+      &__head {
+        font-size: 3.4rem;
+        font-weight: bold;
+      }
+      &__body {
+        color: #505887;
+      }
+      &__line {
+        border: 2px solid #c4c4c4;
+      }
+      &__lists {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &__list {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          &__check {
+            height: 1rem;
+            background-color: #fdbc64;
+            padding: 0.4rem;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(14%);
+  }
+  50% {
+    transform: translateY(11%);
+  }
+  100% {
+    transform: translateY(14%);
+  }
+}
