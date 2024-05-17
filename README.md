@@ -30,6 +30,9 @@ The application consists of the following sections:
 - **Testimonials**
 - **Statistics**
 - **Blogs**
+- **FAQ**
+- **Get Started**
+- **Footer**
 
 ## Technologies Used
 
