@@ -40,8 +40,6 @@
         &__text {
           font-size: 1rem;
         }
-        &__author {
-        }
       }
       &__quote:hover {
         background-color: #989898;
@@ -62,8 +60,7 @@
     &__transactions {
       &__text {
         width: 40%;
-        &__subtitle {
-        }
+
         &__head {
           font-size: 3rem;
           font-weight: 700;
@@ -78,12 +75,9 @@
           display: flex;
           flex-direction: column;
           gap: 2rem;
-          &__img {
-          }
+
           &__text {
             font-size: 1rem;
-          }
-          &__author {
           }
         }
       }
@@ -100,8 +94,7 @@
     &__transactions {
       &__text {
         width: 40%;
-        &__subtitle {
-        }
+
         &__head {
           font-size: 2.7rem;
           font-weight: 700;
@@ -116,12 +109,9 @@
           display: flex;
           flex-direction: column;
           gap: 2rem;
-          &__img {
-          }
+
           &__text {
             font-size: 1rem;
-          }
-          &__author {
           }
         }
       }
@@ -138,8 +128,7 @@
     &__transactions {
       &__text {
         width: 40%;
-        &__subtitle {
-        }
+
         &__head {
           font-size: 2.4rem;
           font-weight: 700;
@@ -153,12 +142,9 @@
           display: flex;
           flex-direction: column;
           gap: 1.5rem;
-          &__img {
-          }
+
           &__text {
             font-size: 1rem;
-          }
-          &__author {
           }
         }
       }
@@ -177,8 +163,6 @@
       &__text {
         width: 80%;
 
-        &__subtitle {
-        }
         &__head {
           font-size: 2.2rem;
           font-weight: 700;
@@ -190,8 +174,7 @@
           padding: 1.5rem;
           border-radius: 1.5rem;
           gap: 1.5rem;
-          &__img {
-          }
+
           &__text {
             font-size: 0.9rem;
           }
@@ -215,8 +198,6 @@
       &__text {
         width: 80%;
 
-        &__subtitle {
-        }
         &__head {
           font-size: 2rem;
           font-weight: 700;
@@ -228,8 +209,7 @@
           padding: 1.5rem;
           border-radius: 1.5rem;
           gap: 1.5rem;
-          &__img {
-          }
+
           &__text {
             font-size: 0.7rem;
           }

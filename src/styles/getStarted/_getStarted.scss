@@ -9,14 +9,11 @@
   margin: 2rem 4rem;
   background-color: #3734a9;
   border-radius: 1rem;
-  padding: 8rem 0rem;
-  //   padding: ;
-  height: auto;
+  padding: 8rem 1rem;
   &__head {
     font-size: 3.5rem;
     font-weight: 800;
     color: white;
-    // width: 50rem;
   }
   &__button {
     padding: 1rem 2rem;
@@ -31,28 +28,68 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
+  .started {
+    margin: 2rem 3.2rem;
+    padding: 6rem 1rem;
+    &__head {
+      font-size: 3rem;
+    }
+    &__button {
+      padding: 1rem 2rem;
+    }
+  }
 }
-
 @media (min-width: 835px) and (max-width: 1024px) {
-  .company {
-    padding: 4rem 3rem;
+  .started {
+    margin: 2rem 3rem;
+    padding: 6rem 1rem;
+    &__head {
+      font-size: 3rem;
+    }
+    &__button {
+      padding: 1rem 2rem;
+    }
   }
 }
 
 @media (min-width: 769px) and (max-width: 834px) {
-  .company {
-    padding: 4rem 2.8rem;
+  .started {
+    margin: 2rem 2.8rem;
+    padding: 5rem 1rem;
+    &__head {
+      font-size: 2.8rem;
+    }
+    &__button {
+      padding: 0.8rem 1.6rem;
+      font-size: 0.9rem;
+    }
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .company {
-    padding: 4rem 2.2rem;
+  .started {
+    margin: 2rem 2.2rem;
+    padding: 4rem 1rem;
+    &__head {
+      font-size: 2.2rem;
+    }
+    &__button {
+      padding: 0.8rem 1.4rem;
+      font-size: 0.9rem;
+    }
   }
 }
 
 @media (max-width: 480px) {
-  .company {
-    padding: 4rem 1.8rem;
+  .started {
+    margin: 2rem 1.8rem;
+    padding: 3rem 1rem;
+    &__head {
+      font-size: 2rem;
+    }
+    &__button {
+      padding: 0.8rem 1.2rem;
+      font-size: 0.8rem;
+    }
   }
 }
