@@ -7,6 +7,8 @@
   &__img {
     position: absolute;
     right: 8rem;
+    height: 7rem;
+    z-index: -1;
   }
   &__head {
     font-size: 3.2rem;
@@ -74,25 +76,167 @@
 }
 
 @media (min-width: 835px) and (max-width: 1024px) {
-  .company {
-    padding: 4rem 3rem;
+  .tes {
+    padding: 3rem 3rem;
+
+    gap: 2.8rem;
+    &__img {
+      right: 8rem;
+    }
+    &__head {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    &__body {
+      width: 100%;
+    }
+    &__slider {
+      display: flex;
+      gap: 2rem;
+      overflow-x: auto;
+      &__card1,
+      &__card2,
+      &__card3 {
+        padding: 1.5rem;
+
+        &__text {
+          width: 18rem;
+
+          gap: 2rem;
+          &__comment {
+            font-size: 1.1rem;
+          }
+          &__author {
+            font-weight: 600;
+          }
+        }
+        &__img {
+          width: 13rem;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 769px) and (max-width: 834px) {
-  .company {
-    padding: 4rem 2.8rem;
+  .tes {
+    padding: 3rem 2.8rem;
+
+    gap: 2.8rem;
+    &__img {
+      right: 6rem;
+    }
+    &__head {
+      font-size: 2.5rem;
+    }
+    &__body {
+    }
+    &__slider {
+      gap: 1.2rem;
+      &__card1,
+      &__card2,
+      &__card3 {
+        // padding: 1.25rem;
+
+        &__text {
+          width: 16rem;
+
+          gap: 2rem;
+          &__comment {
+            font-size: 1rem;
+          }
+          &__author {
+            font-weight: 600;
+          }
+        }
+        &__img {
+          width: 11rem;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .company {
-    padding: 4rem 2.2rem;
+  .tes {
+    padding: 3rem 2.2rem;
+
+    gap: 2.8rem;
+    &__img {
+      right: 3.4rem;
+      height: 6rem;
+    }
+    &__head {
+      font-size: 2.2rem;
+    }
+    &__body {
+      font-size: 0.9rem;
+    }
+    &__slider {
+      gap: 0.1rem;
+      &__card1,
+      &__card2,
+      &__card3 {
+        padding: 1.25rem;
+
+        &__text {
+          width: 14rem;
+
+          gap: 2rem;
+          &__comment {
+            font-size: 0.9rem;
+          }
+          &__author {
+            font-weight: 600;
+            font-size: 0.7rem;
+          }
+        }
+        &__img {
+          width: 9rem;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
-  .company {
-    padding: 4rem 1.8rem;
+  .tes {
+    padding: 3rem 1.8rem;
+
+    gap: 2.8rem;
+    &__img {
+      right: 2rem;
+      height: 4rem;
+    }
+    &__head {
+      font-size: 2rem;
+    }
+    &__body {
+      font-size: 0.7rem;
+    }
+    &__slider {
+      gap: 0.1rem;
+      &__card1,
+      &__card2,
+      &__card3 {
+        padding: 1rem;
+
+        &__text {
+          width: 12rem;
+
+          gap: 2rem;
+          &__comment {
+            font-size: 0.7rem;
+          }
+          &__author {
+            font-weight: 600;
+            font-size: 0.6rem;
+          }
+        }
+        &__img {
+          width: 7rem;
+        }
+      }
+    }
   }
 }
