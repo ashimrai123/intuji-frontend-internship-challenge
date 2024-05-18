@@ -9,13 +9,13 @@ const hamburger = document.getElementById("hamburger")!;
 const handlingSidebar = document.getElementById("sidebarCross");
 function toggleSidebar() {
   if (!toggleValue) {
-    sidebar.style.left = "0";
+    sidebar.style.left = "-0.1px";
     toggleValue = true;
     navbarForHide.style.top = "-20rem";
   } else {
     sidebar.style.left = "-30rem";
     toggleValue = false;
-    navbarForHide.style.top = "0";
+    navbarForHide.style.top = "-0.1px";
   }
 }
 hamburger.addEventListener("click", toggleSidebar);
@@ -28,6 +28,6 @@ document.addEventListener("click", (event) => {
   const isClickInsideHamburger = hamburger.contains(target);
   if (!isClickInsideSidebar && toggleValue && !isClickInsideHamburger) {
     sidebar.style.left = "-30rem";
-    navbarForHide.style.top = "0";
+    navbarForHide.style.top = "-0.1px";
   }
 });

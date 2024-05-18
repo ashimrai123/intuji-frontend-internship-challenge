@@ -1,17 +1,23 @@
 .feats {
   &__payments {
     display: flex;
+    flex-wrap: wrap;
     // flex-direction: column;
     align-items: center;
     // justify-content: ;
-    padding-top: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 
     &__img {
       animation: bounce 1.5s ease-in-out infinite;
+      width: 100%;
+      max-width: 38rem;
     }
     &__text {
       display: flex;
       flex-direction: column;
+      width: 100%;
+      max-width: 38rem;
       gap: 1rem;
       &__subtitle {
         font-weight: 700;
@@ -57,4 +63,22 @@
   100% {
     transform: translateY(14%);
   }
+}
+
+@media (min-width: 1441px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+@media (min-width: 835px) and (max-width: 1024px) {
+}
+
+@media (min-width: 769px) and (max-width: 834px) {
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }

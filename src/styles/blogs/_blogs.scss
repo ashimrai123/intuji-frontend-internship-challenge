@@ -11,6 +11,7 @@
   &__top {
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding-left: 1rem;
@@ -33,15 +34,19 @@
         align-items: center;
         gap: 2rem;
         &__text {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
           font-weight: 600;
-        }
-        &__img {
-          height: 0.8rem;
+          &__img {
+            height: 0.8rem;
+          }
         }
       }
     }
     &__img {
-      width: 30rem;
+      max-width: 30rem;
+      width: 100%;
     }
   }
   &__top:hover {
@@ -52,6 +57,7 @@
   &__bot {
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
     &__first,
     &__second,
     &__third {
@@ -89,4 +95,22 @@
       background-color: #e5e5e5;
     }
   }
+}
+
+@media (min-width: 1441px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+@media (min-width: 835px) and (max-width: 1024px) {
+}
+
+@media (min-width: 769px) and (max-width: 834px) {
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }

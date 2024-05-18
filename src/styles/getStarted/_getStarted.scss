@@ -11,11 +11,12 @@
   border-radius: 1rem;
   padding: 8rem 0rem;
   //   padding: ;
+  height: auto;
   &__head {
     font-size: 3.5rem;
     font-weight: 800;
     color: white;
-    width: 50rem;
+    // width: 50rem;
   }
   &__button {
     padding: 1rem 2rem;
@@ -24,4 +25,22 @@
     border-radius: 0.5rem;
     border-style: none;
   }
+}
+
+@media (min-width: 1441px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+@media (min-width: 835px) and (max-width: 1024px) {
+}
+
+@media (min-width: 769px) and (max-width: 834px) {
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }

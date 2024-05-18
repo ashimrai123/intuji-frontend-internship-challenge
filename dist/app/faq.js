@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
         var isExpanded = false;
         trigger === null || trigger === void 0 ? void 0 : trigger.addEventListener("click", function () {
             if (!isExpanded) {
-                faqItem.style.height = "7.5rem";
+                faqItem.style.height = "100%";
                 trigger.style.backgroundColor = "#5f5c5c";
                 trigger.style.color = "white";
                 isExpanded = true;
             }
             else {
-                faqItem.style.height = "3rem";
+                faqItem.style.height = "4rem";
                 trigger.style.backgroundColor = "#cfcfcf";
                 trigger.style.color = "black";
                 isExpanded = false;

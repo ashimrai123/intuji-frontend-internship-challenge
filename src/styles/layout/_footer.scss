@@ -5,6 +5,7 @@
   gap: 5rem;
   &__top {
     display: flex;
+    flex-wrap: wrap;
     gap: 5rem;
     align-items: start;
     border-bottom: 2px solid #e5e5ea;
@@ -99,4 +100,22 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+@media (min-width: 1441px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+@media (min-width: 835px) and (max-width: 1024px) {
+}
+
+@media (min-width: 769px) and (max-width: 834px) {
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }

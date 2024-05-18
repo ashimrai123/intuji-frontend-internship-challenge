@@ -11,6 +11,7 @@
       justify-content: space-between;
       align-items: center;
       gap: 2rem;
+      flex-wrap: wrap;
       &__topic {
         display: flex;
         flex-direction: column;
@@ -54,11 +55,14 @@
     }
     &__icons {
       display: flex;
-      gap: 2rem;
+      // gap: 2rem;
+      justify-content: space-between;
 
+      flex-wrap: wrap;
       &__connect,
       &__review,
       &__income {
+        width: 18rem;
         background-color: #ffff;
         display: flex;
         flex-direction: column;
@@ -98,4 +102,22 @@
       }
     }
   }
+}
+
+@media (min-width: 1441px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+@media (min-width: 835px) and (max-width: 1024px) {
+}
+
+@media (min-width: 769px) and (max-width: 834px) {
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
 }
