@@ -833,7 +833,6 @@ li {
 .feats__blowsMind__icons {
   display: flex;
   gap: 2.5rem;
-  flex-wrap: wrap;
 }
 .feats__blowsMind__icons__first, .feats__blowsMind__icons__second {
   width: 20rem;
@@ -873,24 +872,245 @@ li {
   background-color: lightblue;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .feats__blowsMind {
+    margin: 0 -4rem;
+    padding: 6rem 4rem 8rem 4rem;
+    gap: 2rem;
+  }
+  .feats__blowsMind__head {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .feats__blowsMind__body {
+    width: 80%;
+  }
+  .feats__blowsMind__icons {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .feats__blowsMind__icons__first, .feats__blowsMind__icons__second {
+    width: 20rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .feats__blowsMind__icons__first__img, .feats__blowsMind__icons__second__img {
+    width: 4rem;
+  }
+  .feats__blowsMind__icons__first__head, .feats__blowsMind__icons__second__head {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .feats__blowsMind__icons__first:hover, .feats__blowsMind__icons__second:hover {
+    scale: 1.05;
+    background-color: lightblue;
+  }
+  .feats__blowsMind__icons__third {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 20rem;
+  }
+  .feats__blowsMind__icons__third__top, .feats__blowsMind__icons__third__bottom {
+    background-color: white;
+    padding: 3.2rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: scale 0.2s ease-in, background-color 0.2s ease-in-out;
+  }
+}
 @media (min-width: 835px) and (max-width: 1024px) {
-  .company {
-    padding: 4rem 3rem;
+  .feats__blowsMind {
+    margin: 0 -3rem;
+    padding: 6rem 3rem 8rem;
+    gap: 2rem;
+  }
+  .feats__blowsMind__head {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .feats__blowsMind__body {
+    width: 80%;
+  }
+  .feats__blowsMind__icons {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .feats__blowsMind__icons__first, .feats__blowsMind__icons__second {
+    width: 20rem;
+    gap: 1.4rem;
+  }
+  .feats__blowsMind__icons__first__img, .feats__blowsMind__icons__second__img {
+    width: 3.2rem;
+  }
+  .feats__blowsMind__icons__first__head, .feats__blowsMind__icons__second__head {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .feats__blowsMind__icons__first__body, .feats__blowsMind__icons__second__body {
+    font-size: 0.8rem;
+  }
+  .feats__blowsMind__icons__third {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 20rem;
+    justify-content: space-between;
+  }
+  .feats__blowsMind__icons__third__top, .feats__blowsMind__icons__third__bottom {
+    padding: 2.5rem 1.6rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 769px) and (max-width: 834px) {
-  .company {
-    padding: 4rem 2.8rem;
+  .feats__blowsMind {
+    margin: 0 -2.8rem;
+    padding: 6rem 2.8rem 8rem;
+    gap: 2rem;
+  }
+  .feats__blowsMind__head {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  .feats__blowsMind__body {
+    width: 80%;
+  }
+  .feats__blowsMind__icons {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .feats__blowsMind__icons__first, .feats__blowsMind__icons__second {
+    width: 20rem;
+    gap: 1.4rem;
+  }
+  .feats__blowsMind__icons__first__img, .feats__blowsMind__icons__second__img {
+    width: 2.8rem;
+  }
+  .feats__blowsMind__icons__first__head, .feats__blowsMind__icons__second__head {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .feats__blowsMind__icons__first__body, .feats__blowsMind__icons__second__body {
+    font-size: 0.8rem;
+  }
+  .feats__blowsMind__icons__third {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 20rem;
+    justify-content: space-between;
+  }
+  .feats__blowsMind__icons__third__top, .feats__blowsMind__icons__third__bottom {
+    padding: 2.3rem 1.3rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .company {
-    padding: 4rem 2.2rem;
+  .feats__blowsMind {
+    margin: 0 -2.2rem;
+    padding: 6rem 2.2rem 8rem;
+    align-items: center;
+    gap: 2rem;
+  }
+  .feats__blowsMind__head {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .feats__blowsMind__body {
+    width: 80%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .feats__blowsMind__icons {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .feats__blowsMind__icons__first, .feats__blowsMind__icons__second {
+    width: 20rem;
+    gap: 1.4rem;
+    width: 85%;
+    padding: 2.8rem 1.2rem 2.2rem 1.2rem;
+  }
+  .feats__blowsMind__icons__first__img, .feats__blowsMind__icons__second__img {
+    width: 2.8rem;
+  }
+  .feats__blowsMind__icons__first__head, .feats__blowsMind__icons__second__head {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .feats__blowsMind__icons__first__body, .feats__blowsMind__icons__second__body {
+    font-size: 0.8rem;
+  }
+  .feats__blowsMind__icons__third {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-between;
+    width: 93%;
+  }
+  .feats__blowsMind__icons__third__top, .feats__blowsMind__icons__third__bottom {
+    padding: 2.1rem 0.7rem;
+    font-size: 0.8rem;
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
-  .company {
-    padding: 4rem 1.8rem;
+  .feats__blowsMind {
+    margin: 0 -1.8rem;
+    padding: 6rem 1.8rem 8rem;
+    align-items: center;
+    gap: 2rem;
+  }
+  .feats__blowsMind__head {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .feats__blowsMind__body {
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .feats__blowsMind__icons {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .feats__blowsMind__icons__first, .feats__blowsMind__icons__second {
+    width: 20rem;
+    gap: 1.4rem;
+    width: 85%;
+    padding: 2.5rem 1rem 2rem 1rem;
+  }
+  .feats__blowsMind__icons__first__img, .feats__blowsMind__icons__second__img {
+    width: 2.6rem;
+  }
+  .feats__blowsMind__icons__first__head, .feats__blowsMind__icons__second__head {
+    font-size: 0.9rem;
+  }
+  .feats__blowsMind__icons__first__body, .feats__blowsMind__icons__second__body {
+    font-size: 0.8rem;
+  }
+  .feats__blowsMind__icons__third {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-between;
+    width: 95%;
+  }
+  .feats__blowsMind__icons__third__top, .feats__blowsMind__icons__third__bottom {
+    padding: 1.6rem 0.6rem;
+    font-size: 0.8rem;
+    width: 100%;
   }
 }
 .feats__payments {
@@ -1166,7 +1386,7 @@ li {
 
 @media (min-width: 835px) and (max-width: 1024px) {
   .feats {
-    padding: 5rem 2.8rem;
+    padding: 5rem 3rem;
   }
   .feats__pf__head {
     padding: 1rem 0 5rem 0;
