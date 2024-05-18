@@ -743,10 +743,10 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .company__list__img {
-  height: 1.2rem;
+  height: 1.6rem;
   object-fit: contain;
   transition: scale 0.3s ease;
 }
@@ -756,22 +756,62 @@ li {
 
 @media (min-width: 835px) and (max-width: 1024px) {
   .company {
-    padding: 4rem 3rem;
+    padding: 3.5rem 3rem;
+    gap: 3rem;
+  }
+  .company__subhead {
+    font-size: 1.5rem;
+  }
+  .company__list {
+    gap: 1.8rem;
+  }
+  .company__list__img {
+    height: 1.3rem;
   }
 }
 @media (min-width: 769px) and (max-width: 834px) {
   .company {
-    padding: 4rem 2.8rem;
+    padding: 3rem 2.8rem;
+    gap: 2.5rem;
+  }
+  .company__subhead {
+    font-size: 1.3rem;
+  }
+  .company__list {
+    gap: 1.6rem;
+  }
+  .company__list__img {
+    height: 1.3rem;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .company {
-    padding: 4rem 2.2rem;
+    padding: 2.5rem 2.2rem;
+    gap: 2rem;
+  }
+  .company__subhead {
+    font-size: 1.2rem;
+  }
+  .company__list {
+    gap: 1.4rem;
+  }
+  .company__list__img {
+    height: 1.1rem;
   }
 }
 @media (max-width: 480px) {
   .company {
-    padding: 4rem 1.8rem;
+    padding: 1rem 1.8rem;
+    gap: 2rem;
+  }
+  .company__subhead {
+    font-size: 1.1rem;
+  }
+  .company__list {
+    gap: 1.3srem;
+  }
+  .company__list__img {
+    height: 1rem;
   }
 }
 .feats__blowsMind {
