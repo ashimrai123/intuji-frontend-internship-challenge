@@ -1343,16 +1343,19 @@ li {
 .feats__pf__icons {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
+  gap: 1%;
+  height: 100%;
 }
 .feats__pf__icons__connect, .feats__pf__icons__review, .feats__pf__icons__income {
-  width: 18rem;
+  height: 100%;
+  width: 30%;
   background-color: white;
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   gap: 1.5rem;
   padding: 5rem 1.8rem 3rem 1.8rem;
   border-radius: 10%;
@@ -1539,6 +1542,7 @@ li {
   .feats__pf__icons {
     flex-direction: column;
     align-items: center;
+    gap: 2%;
   }
   .feats__pf__icons__connect, .feats__pf__icons__review, .feats__pf__icons__income {
     width: 80%;
@@ -2306,11 +2310,6 @@ li {
 @media (min-width: 1025px) and (max-width: 1440px) {
   .blogs__head {
     font-size: 3.2rem;
-    font-weight: 700;
-  }
-  .blogs__top {
-    padding-left: 1rem;
-    gap: 2rem;
   }
   .blogs__top__text {
     width: 40%;
@@ -2318,13 +2317,6 @@ li {
   }
   .blogs__top__text__heading {
     font-size: 1.8rem;
-  }
-  .blogs__top__text__readMore {
-    padding-top: 2rem;
-    gap: 2rem;
-  }
-  .blogs__top__text__readMore__text {
-    gap: 1rem;
   }
   .blogs__top__text__readMore__text__img {
     height: 0.8rem;
@@ -2336,9 +2328,7 @@ li {
     gap: 1.5rem;
   }
   .blogs__bot__first, .blogs__bot__second, .blogs__bot__third {
-    padding: 1rem;
     width: 30%;
-    gap: 3rem;
   }
   .blogs__bot__first__text, .blogs__bot__second__text, .blogs__bot__third__text {
     width: 100%;
@@ -2589,27 +2579,25 @@ li {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  height: 100%;
 }
 .faq__head {
   font-size: 4rem;
   font-weight: 700;
-  max-width: 32rem;
-  width: 100%;
+  width: 55%;
 }
 .faq__body {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
-  flex-wrap: wrap;
 }
 .faq__body__questions {
   display: flex;
   flex-direction: column;
+  width: 65%;
   gap: 1rem;
+  height: 100%;
 }
 .faq__body__questions__1, .faq__body__questions__2, .faq__body__questions__3, .faq__body__questions__4, .faq__body__questions__5 {
-  transition: height 0.3s ease;
   height: 4rem;
   display: block;
   overflow: hidden;
@@ -2628,6 +2616,7 @@ li {
 .faq__body__questions__1__head__quest, .faq__body__questions__2__head__quest, .faq__body__questions__3__head__quest, .faq__body__questions__4__head__quest, .faq__body__questions__5__head__quest {
   font-size: 1.3rem;
   font-weight: 800;
+  width: 85%;
 }
 .faq__body__questions__1__head__trigger, .faq__body__questions__2__head__trigger, .faq__body__questions__3__head__trigger, .faq__body__questions__4__head__trigger, .faq__body__questions__5__head__trigger {
   border: none;
@@ -2643,8 +2632,7 @@ li {
 .faq__body__moreQuest {
   border: 1px solid #cfcfcf;
   padding: 2rem;
-  height: 30rem;
-  width: 24rem;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2676,29 +2664,289 @@ li {
   padding: 2rem 5rem;
   transition: background-color 0.3s ease;
   color: white;
+  text-align: center;
 }
 .faq__body__moreQuest__mail:hover {
   background-color: #df6a49;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .faq {
+    gap: 3rem;
+  }
+  .faq__head {
+    font-size: 3.5rem;
+  }
+  .faq__body {
+    gap: 3rem;
+  }
+  .faq__body__questions {
+    gap: 1rem;
+  }
+  .faq__body__questions__1, .faq__body__questions__2, .faq__body__questions__3, .faq__body__questions__4, .faq__body__questions__5 {
+    height: 4rem;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .faq__body__questions__1__head, .faq__body__questions__2__head, .faq__body__questions__3__head, .faq__body__questions__4__head, .faq__body__questions__5__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__body__questions__1__head__quest, .faq__body__questions__2__head__quest, .faq__body__questions__3__head__quest, .faq__body__questions__4__head__quest, .faq__body__questions__5__head__quest {
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+  .faq__body__questions__1__head__trigger, .faq__body__questions__2__head__trigger, .faq__body__questions__3__head__trigger, .faq__body__questions__4__head__trigger, .faq__body__questions__5__head__trigger {
+    border: none;
+    font-size: 2rem;
+    padding: 0 0.8rem;
+    border-radius: 50%;
+    color: black;
+  }
+  .faq__body__questions__1__body, .faq__body__questions__2__body, .faq__body__questions__3__body, .faq__body__questions__4__body, .faq__body__questions__5__body {
+    height: 100%;
+  }
+  .faq__body__moreQuest {
+    padding: 2rem;
+  }
+  .faq__body__moreQuest__top {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+  .faq__body__moreQuest__top__img {
+    height: 3.4rem;
+  }
+  .faq__body__moreQuest__top__head {
+    font-size: 1.5rem;
+  }
+  .faq__body__moreQuest__top__body {
+    text-align: center;
+  }
+  .faq__body__moreQuest__mail {
+    padding: 2rem 5rem;
+  }
+}
 @media (min-width: 835px) and (max-width: 1024px) {
-  .company {
-    padding: 4rem 3rem;
+  .faq {
+    padding: 3rem 3rem;
+    gap: 2.5rem;
+  }
+  .faq__head {
+    font-size: 3rem;
+  }
+  .faq__body {
+    gap: 3rem;
+  }
+  .faq__body__questions {
+    gap: 1rem;
+  }
+  .faq__body__questions__1, .faq__body__questions__2, .faq__body__questions__3, .faq__body__questions__4, .faq__body__questions__5 {
+    height: 4rem;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .faq__body__questions__1__head, .faq__body__questions__2__head, .faq__body__questions__3__head, .faq__body__questions__4__head, .faq__body__questions__5__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__body__questions__1__head__quest, .faq__body__questions__2__head__quest, .faq__body__questions__3__head__quest, .faq__body__questions__4__head__quest, .faq__body__questions__5__head__quest {
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+  .faq__body__questions__1__head__trigger, .faq__body__questions__2__head__trigger, .faq__body__questions__3__head__trigger, .faq__body__questions__4__head__trigger, .faq__body__questions__5__head__trigger {
+    border: none;
+    font-size: 2rem;
+    padding: 0 0.8rem;
+    border-radius: 50%;
+    color: black;
+  }
+  .faq__body__questions__1__body, .faq__body__questions__2__body, .faq__body__questions__3__body, .faq__body__questions__4__body, .faq__body__questions__5__body {
+    height: 100%;
+  }
+  .faq__body__moreQuest {
+    padding: 2rem;
+  }
+  .faq__body__moreQuest__top {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+  .faq__body__moreQuest__top__img {
+    height: 3rem;
+  }
+  .faq__body__moreQuest__top__head {
+    font-size: 1.2rem;
+  }
+  .faq__body__moreQuest__top__body {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .faq__body__moreQuest__mail {
+    padding: 2rem 3rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 769px) and (max-width: 834px) {
-  .company {
-    padding: 4rem 2.8rem;
+  .faq {
+    padding: 3rem 2.8rem;
+    gap: 2.2rem;
+  }
+  .faq__head {
+    font-size: 2.8rem;
+  }
+  .faq__body {
+    gap: 2rem;
+  }
+  .faq__body__questions {
+    gap: 0.8rem;
+  }
+  .faq__body__questions__1, .faq__body__questions__2, .faq__body__questions__3, .faq__body__questions__4, .faq__body__questions__5 {
+    height: 4rem;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .faq__body__questions__1__head, .faq__body__questions__2__head, .faq__body__questions__3__head, .faq__body__questions__4__head, .faq__body__questions__5__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__body__questions__1__head__quest, .faq__body__questions__2__head__quest, .faq__body__questions__3__head__quest, .faq__body__questions__4__head__quest, .faq__body__questions__5__head__quest {
+    font-size: 1.1rem;
+  }
+  .faq__body__questions__1__body, .faq__body__questions__2__body, .faq__body__questions__3__body, .faq__body__questions__4__body, .faq__body__questions__5__body {
+    height: 100%;
+  }
+  .faq__body__moreQuest {
+    padding: 2rem;
+  }
+  .faq__body__moreQuest__top {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+  .faq__body__moreQuest__top__img {
+    height: 3.4rem;
+  }
+  .faq__body__moreQuest__top__head {
+    font-size: 1.5rem;
+  }
+  .faq__body__moreQuest__top__body {
+    text-align: center;
+  }
+  .faq__body__moreQuest__mail {
+    padding: 2rem 5rem;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .company {
-    padding: 4rem 2.2rem;
+  .faq {
+    padding: 3rem 2.2rem;
+    gap: 2.2rem;
+  }
+  .faq__head {
+    font-size: 2.2rem;
+  }
+  .faq__body {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq__body__questions {
+    width: 100%;
+    gap: 0.8rem;
+  }
+  .faq__body__questions__1, .faq__body__questions__2, .faq__body__questions__3, .faq__body__questions__4, .faq__body__questions__5 {
+    height: 4rem;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .faq__body__questions__1__head, .faq__body__questions__2__head, .faq__body__questions__3__head, .faq__body__questions__4__head, .faq__body__questions__5__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__body__questions__1__head__quest, .faq__body__questions__2__head__quest, .faq__body__questions__3__head__quest, .faq__body__questions__4__head__quest, .faq__body__questions__5__head__quest {
+    font-size: 1rem;
+  }
+  .faq__body__questions__1__body, .faq__body__questions__2__body, .faq__body__questions__3__body, .faq__body__questions__4__body, .faq__body__questions__5__body {
+    height: 100%;
+    font-size: 0.8rem;
+  }
+  .faq__body__moreQuest {
+    padding: 1.2rem;
+    width: 80%;
+    gap: 3rem;
+  }
+  .faq__body__moreQuest__top {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+  .faq__body__moreQuest__top__img {
+    height: 3.4rem;
+  }
+  .faq__body__moreQuest__top__head {
+    font-size: 1.3rem;
+  }
+  .faq__body__moreQuest__top__body {
+    text-align: center;
+  }
+  .faq__body__moreQuest__mail {
+    padding: 1.3rem 4rem;
   }
 }
 @media (max-width: 480px) {
-  .company {
-    padding: 4rem 1.8rem;
+  .faq {
+    padding: 3rem 1.8rem;
+    gap: 2rem;
+  }
+  .faq__head {
+    font-size: 2rem;
+  }
+  .faq__body {
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq__body__questions {
+    width: 100%;
+    gap: 0.8rem;
+  }
+  .faq__body__questions__1, .faq__body__questions__2, .faq__body__questions__3, .faq__body__questions__4, .faq__body__questions__5 {
+    height: 4rem;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .faq__body__questions__1__head, .faq__body__questions__2__head, .faq__body__questions__3__head, .faq__body__questions__4__head, .faq__body__questions__5__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq__body__questions__1__head__quest, .faq__body__questions__2__head__quest, .faq__body__questions__3__head__quest, .faq__body__questions__4__head__quest, .faq__body__questions__5__head__quest {
+    font-size: 1rem;
+  }
+  .faq__body__questions__1__body, .faq__body__questions__2__body, .faq__body__questions__3__body, .faq__body__questions__4__body, .faq__body__questions__5__body {
+    height: 100%;
+    font-size: 0.8rem;
+  }
+  .faq__body__moreQuest {
+    padding: 1rem;
+    width: 80%;
+    gap: 3rem;
+  }
+  .faq__body__moreQuest__top {
+    padding-top: 2rem;
+    gap: 2rem;
+  }
+  .faq__body__moreQuest__top__img {
+    height: 3.4rem;
+  }
+  .faq__body__moreQuest__top__head {
+    font-size: 1.2rem;
+  }
+  .faq__body__moreQuest__top__body {
+    text-align: center;
+  }
+  .faq__body__moreQuest__mail {
+    padding: 1rem 3rem;
   }
 }
 .started {

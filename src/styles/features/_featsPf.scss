@@ -44,8 +44,6 @@
         &__text {
           font-size: 1rem;
         }
-        &__author {
-        }
       }
       &__quote:hover {
         background-color: #989898;
@@ -54,19 +52,20 @@
     &__icons {
       display: flex;
       justify-content: space-between;
-      align-items: start;
-
+      align-items: center;
+      gap: 1%;
+      height: 100%;
       &__connect,
       &__review,
       &__income {
-        width: 18rem;
+        height: 100%;
+        width: 30%;
         background-color: #ffff;
         display: flex;
         flex: 1;
-
         flex-direction: column;
         align-items: center;
-        justify-content: end;
+        justify-content: space-between;
         gap: 1.5rem;
         padding: 5rem 1.8rem 3rem 1.8rem;
         border-radius: 10%;
@@ -217,8 +216,6 @@
           &__text {
             font-size: 1rem;
           }
-          &__author {
-          }
         }
       }
       &__icons {
@@ -299,6 +296,7 @@
       &__icons {
         flex-direction: column;
         align-items: center;
+        gap: 2%;
         &__connect,
         &__review,
         &__income {

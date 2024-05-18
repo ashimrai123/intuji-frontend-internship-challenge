@@ -3,30 +3,29 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  height: 100%;
 
   &__head {
     font-size: 4rem;
     font-weight: 700;
-    max-width: 32rem;
-    width: 100%;
+    width: 55%;
   }
   &__body {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    flex-wrap: wrap;
 
     &__questions {
       display: flex;
       flex-direction: column;
+      width: 65%;
       gap: 1rem;
+
+      height: 100%;
       &__1,
       &__2,
       &__3,
       &__4,
       &__5 {
-        transition: height 0.3s ease;
         height: 4rem;
         display: block;
         overflow: hidden;
@@ -44,6 +43,7 @@
           &__quest {
             font-size: 1.3rem;
             font-weight: 800;
+            width: 85%;
           }
           &__trigger {
             border: none;
@@ -63,8 +63,7 @@
     &__moreQuest {
       border: 1px solid #cfcfcf;
       padding: 2rem;
-      height: 30rem;
-      width: 24rem;
+      width: 30%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -97,6 +96,7 @@
         padding: 2rem 5rem;
         transition: background-color 0.3s ease;
         color: white;
+        text-align: center;
       }
       &__mail:hover {
         background-color: #df6a49;
@@ -109,28 +109,323 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
+  .faq {
+    gap: 3rem;
+
+    &__head {
+      font-size: 3.5rem;
+    }
+    &__body {
+      gap: 3rem;
+
+      &__questions {
+        gap: 1rem;
+        &__1,
+        &__2,
+        &__3,
+        &__4,
+        &__5 {
+          height: 4rem;
+          padding: 1rem;
+          gap: 2rem;
+          &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__quest {
+              font-size: 1.3rem;
+              font-weight: 800;
+            }
+            &__trigger {
+              border: none;
+              font-size: 2rem;
+              padding: 0 0.8rem;
+              border-radius: 50%;
+              color: black;
+            }
+          }
+          &__body {
+            height: 100%;
+          }
+        }
+      }
+      &__moreQuest {
+        padding: 2rem;
+
+        &__top {
+          padding-top: 2rem;
+          gap: 2rem;
+          &__img {
+            height: 3.4rem;
+          }
+          &__head {
+            font-size: 1.5rem;
+          }
+          &__body {
+            text-align: center;
+          }
+        }
+        &__mail {
+          padding: 2rem 5rem;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 835px) and (max-width: 1024px) {
-  .company {
-    padding: 4rem 3rem;
+  .faq {
+    padding: 3rem 3rem;
+    gap: 2.5rem;
+
+    &__head {
+      font-size: 3rem;
+    }
+    &__body {
+      gap: 3rem;
+
+      &__questions {
+        gap: 1rem;
+        &__1,
+        &__2,
+        &__3,
+        &__4,
+        &__5 {
+          height: 4rem;
+          padding: 1rem;
+          gap: 2rem;
+          &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__quest {
+              font-size: 1.3rem;
+              font-weight: 800;
+            }
+            &__trigger {
+              border: none;
+              font-size: 2rem;
+              padding: 0 0.8rem;
+              border-radius: 50%;
+              color: black;
+            }
+          }
+          &__body {
+            height: 100%;
+          }
+        }
+      }
+      &__moreQuest {
+        padding: 2rem;
+
+        &__top {
+          padding-top: 2rem;
+          gap: 2rem;
+          &__img {
+            height: 3rem;
+          }
+          &__head {
+            font-size: 1.2rem;
+          }
+          &__body {
+            text-align: center;
+            font-size: 0.9rem;
+          }
+        }
+        &__mail {
+          padding: 2rem 3rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 769px) and (max-width: 834px) {
-  .company {
-    padding: 4rem 2.8rem;
+  .faq {
+    padding: 3rem 2.8rem;
+    gap: 2.2rem;
+
+    &__head {
+      font-size: 2.8rem;
+    }
+    &__body {
+      gap: 2rem;
+
+      &__questions {
+        gap: 0.8rem;
+        &__1,
+        &__2,
+        &__3,
+        &__4,
+        &__5 {
+          height: 4rem;
+          padding: 1rem;
+          gap: 2rem;
+          &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__quest {
+              font-size: 1.1rem;
+            }
+          }
+          &__body {
+            height: 100%;
+          }
+        }
+      }
+      &__moreQuest {
+        padding: 2rem;
+
+        &__top {
+          padding-top: 2rem;
+          gap: 2rem;
+          &__img {
+            height: 3.4rem;
+          }
+          &__head {
+            font-size: 1.5rem;
+          }
+          &__body {
+            text-align: center;
+          }
+        }
+        &__mail {
+          padding: 2rem 5rem;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .company {
-    padding: 4rem 2.2rem;
+  .faq {
+    padding: 3rem 2.2rem;
+    gap: 2.2rem;
+
+    &__head {
+      font-size: 2.2rem;
+    }
+    &__body {
+      gap: 2rem;
+      flex-direction: column;
+      align-items: center;
+      &__questions {
+        width: 100%;
+        gap: 0.8rem;
+        &__1,
+        &__2,
+        &__3,
+        &__4,
+        &__5 {
+          height: 4rem;
+          padding: 1rem;
+          gap: 2rem;
+          &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__quest {
+              font-size: 1rem;
+            }
+          }
+          &__body {
+            height: 100%;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      &__moreQuest {
+        padding: 1.2rem;
+        width: 80%;
+        gap: 3rem;
+
+        &__top {
+          padding-top: 2rem;
+          gap: 2rem;
+          &__img {
+            height: 3.4rem;
+          }
+          &__head {
+            font-size: 1.3rem;
+          }
+          &__body {
+            text-align: center;
+          }
+        }
+        &__mail {
+          padding: 1.3rem 4rem;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
-  .company {
-    padding: 4rem 1.8rem;
+  .faq {
+    padding: 3rem 1.8rem;
+    gap: 2rem;
+
+    &__head {
+      font-size: 2rem;
+    }
+    &__body {
+      gap: 2rem;
+      flex-direction: column;
+      align-items: center;
+      &__questions {
+        width: 100%;
+        gap: 0.8rem;
+        &__1,
+        &__2,
+        &__3,
+        &__4,
+        &__5 {
+          height: 4rem;
+          padding: 1rem;
+          gap: 2rem;
+          &__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__quest {
+              font-size: 1rem;
+            }
+          }
+          &__body {
+            height: 100%;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      &__moreQuest {
+        padding: 1rem;
+        width: 80%;
+        gap: 3rem;
+
+        &__top {
+          padding-top: 2rem;
+          gap: 2rem;
+          &__img {
+            height: 3.4rem;
+          }
+          &__head {
+            font-size: 1.2rem;
+          }
+          &__body {
+            text-align: center;
+          }
+        }
+        &__mail {
+          padding: 1rem 3rem;
+        }
+      }
+    }
   }
 }
