@@ -2049,7 +2049,6 @@ li {
   justify-content: space-between;
   align-items: center;
   color: white;
-  flex-wrap: wrap;
 }
 .statistics__heading {
   width: 9rem;
@@ -2058,18 +2057,174 @@ li {
   border: 2px solid #3d3d3d;
   height: 13rem;
   position: absolute;
-  left: 20rem;
+  left: 22%;
 }
-.statistics__users__num, .statistics__reviews__num, .statistics__transactions__num {
+.statistics__side {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.statistics__side__users__num, .statistics__side__reviews__num, .statistics__side__transactions__num {
   font-size: 3.5rem;
 }
-.statistics__users__detail, .statistics__reviews__detail, .statistics__transactions__detail {
+.statistics__side__users__detail, .statistics__side__reviews__detail, .statistics__side__transactions__detail {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.statistics__users__detail__img, .statistics__reviews__detail__img, .statistics__transactions__detail__img {
+.statistics__side__users__detail__img, .statistics__side__reviews__detail__img, .statistics__side__transactions__detail__img {
   height: 1.1rem;
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .statistics {
+    background-color: #3734a9;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+  }
+  .statistics__heading {
+    width: 9rem;
+  }
+  .statistics__line {
+    border: 2px solid #3d3d3d;
+    height: 13rem;
+    position: absolute;
+    left: 22%;
+  }
+  .statistics__side__users__num, .statistics__side__reviews__num, .statistics__side__transactions__num {
+    font-size: 3.2rem;
+  }
+  .statistics__side__users__detail, .statistics__side__reviews__detail, .statistics__side__transactions__detail {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .statistics__side__users__detail__img, .statistics__side__reviews__detail__img, .statistics__side__transactions__detail__img {
+    height: 1.1rem;
+  }
+}
+@media (min-width: 835px) and (max-width: 1024px) {
+  .statistics {
+    padding: 3rem;
+  }
+  .statistics__heading {
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+  .statistics__line {
+    height: 11rem;
+    left: 22%;
+  }
+  .statistics__side__users__num, .statistics__side__reviews__num, .statistics__side__transactions__num {
+    font-size: 3rem;
+  }
+  .statistics__side__users__detail, .statistics__side__reviews__detail, .statistics__side__transactions__detail {
+    gap: 1rem;
+  }
+  .statistics__side__users__detail__img, .statistics__side__reviews__detail__img, .statistics__side__transactions__detail__img {
+    height: 1.1rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 834px) {
+  .statistics {
+    padding: 2.8rem;
+  }
+  .statistics__heading {
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+  .statistics__line {
+    height: 9rem;
+    left: 22%;
+  }
+  .statistics__side__users__num, .statistics__side__reviews__num, .statistics__side__transactions__num {
+    font-size: 2.5rem;
+  }
+  .statistics__side__users__detail, .statistics__side__reviews__detail, .statistics__side__transactions__detail {
+    gap: 0.7rem;
+  }
+  .statistics__side__users__detail__img, .statistics__side__reviews__detail__img, .statistics__side__transactions__detail__img {
+    height: 0.8rem;
+  }
+  .statistics__side__users__detail__text, .statistics__side__reviews__detail__text, .statistics__side__transactions__detail__text {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .statistics {
+    padding: 2.2rem;
+    flex-direction: row;
+  }
+  .statistics__heading {
+    width: 30%;
+    font-size: 0.7rem;
+  }
+  .statistics__line {
+    height: 12.5rem;
+    left: 40%;
+  }
+  .statistics__side {
+    flex-direction: column;
+    width: 55%;
+  }
+  .statistics__side__users, .statistics__side__reviews, .statistics__side__transactions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .statistics__side__users__num, .statistics__side__reviews__num, .statistics__side__transactions__num {
+    font-size: 2.2rem;
+  }
+  .statistics__side__users__detail, .statistics__side__reviews__detail, .statistics__side__transactions__detail {
+    gap: 0.3rem;
+  }
+  .statistics__side__users__detail__img, .statistics__side__reviews__detail__img, .statistics__side__transactions__detail__img {
+    height: 0.6rem;
+  }
+  .statistics__side__users__detail__text, .statistics__side__reviews__detail__text, .statistics__side__transactions__detail__text {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 480px) {
+  .statistics {
+    padding: 1.8rem;
+    flex-direction: row;
+  }
+  .statistics__heading {
+    width: 30%;
+    font-size: 0.6rem;
+  }
+  .statistics__line {
+    height: 11rem;
+    left: 40%;
+  }
+  .statistics__side {
+    flex-direction: column;
+    width: 55%;
+  }
+  .statistics__side__users, .statistics__side__reviews, .statistics__side__transactions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .statistics__side__users__num, .statistics__side__reviews__num, .statistics__side__transactions__num {
+    font-size: 2rem;
+  }
+  .statistics__side__users__detail, .statistics__side__reviews__detail, .statistics__side__transactions__detail {
+    gap: 0.3rem;
+  }
+  .statistics__side__users__detail__img, .statistics__side__reviews__detail__img, .statistics__side__transactions__detail__img {
+    height: 0.6rem;
+  }
+  .statistics__side__users__detail__text, .statistics__side__reviews__detail__text, .statistics__side__transactions__detail__text {
+    font-size: 0.6rem;
+  }
 }
 .blogs {
   padding: 8rem 4rem;

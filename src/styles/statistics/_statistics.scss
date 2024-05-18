@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
   color: white;
-  flex-wrap: wrap;
   &__heading {
     width: 9rem;
   }
@@ -13,22 +12,28 @@
     border: 2px solid #3d3d3d;
     height: 13rem;
     position: absolute;
-    left: 20rem;
+    left: 22%;
   }
-  &__users,
-  &__reviews,
-  &__transactions {
-    &__num {
-      font-size: 3.5rem;
-    }
-    &__detail {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      &__img {
-        height: 1.1rem;
+  &__side {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__users,
+    &__reviews,
+    &__transactions {
+      &__num {
+        font-size: 3.5rem;
       }
-      &__text {
+      &__detail {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        &__img {
+          height: 1.1rem;
+        }
+        &__text {
+        }
       }
     }
   }
@@ -38,16 +43,188 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
+  .statistics {
+    background-color: #3734a9;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    &__heading {
+      width: 9rem;
+    }
+    &__line {
+      border: 2px solid #3d3d3d;
+      height: 13rem;
+      position: absolute;
+      left: 22%;
+    }
+    &__side {
+      &__users,
+      &__reviews,
+      &__transactions {
+        &__num {
+          font-size: 3.2rem;
+        }
+        &__detail {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          &__img {
+            height: 1.1rem;
+          }
+          &__text {
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 835px) and (max-width: 1024px) {
+  .statistics {
+    padding: 3rem;
+    &__heading {
+      width: 6rem;
+      font-size: 0.8rem;
+    }
+    &__line {
+      height: 11rem;
+      left: 22%;
+    }
+    &__side {
+      &__users,
+      &__reviews,
+      &__transactions {
+        &__num {
+          font-size: 3rem;
+        }
+        &__detail {
+          gap: 1rem;
+          &__img {
+            height: 1.1rem;
+          }
+          &__text {
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 769px) and (max-width: 834px) {
+  .statistics {
+    padding: 2.8rem;
+
+    &__heading {
+      width: 5rem;
+      font-size: 0.7rem;
+    }
+    &__line {
+      height: 9rem;
+      left: 22%;
+    }
+    &__side {
+      &__users,
+      &__reviews,
+      &__transactions {
+        &__num {
+          font-size: 2.5rem;
+        }
+        &__detail {
+          gap: 0.7rem;
+
+          &__img {
+            height: 0.8rem;
+          }
+          &__text {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .statistics {
+    padding: 2.2rem;
+    flex-direction: row;
+
+    &__heading {
+      width: 30%;
+      font-size: 0.7rem;
+    }
+    &__line {
+      height: 12.5rem;
+      left: 40%;
+    }
+    &__side {
+      flex-direction: column;
+      width: 55%;
+      &__users,
+      &__reviews,
+      &__transactions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        &__num {
+          font-size: 2.2rem;
+        }
+        &__detail {
+          gap: 0.3rem;
+
+          &__img {
+            height: 0.6rem;
+          }
+          &__text {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
+  .statistics {
+    padding: 1.8rem;
+    flex-direction: row;
+
+    &__heading {
+      width: 30%;
+      font-size: 0.6rem;
+    }
+    &__line {
+      height: 11rem;
+      left: 40%;
+    }
+    &__side {
+      flex-direction: column;
+      width: 55%;
+      &__users,
+      &__reviews,
+      &__transactions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        &__num {
+          font-size: 2rem;
+        }
+        &__detail {
+          gap: 0.3rem;
+
+          &__img {
+            height: 0.6rem;
+          }
+          &__text {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+  }
 }
