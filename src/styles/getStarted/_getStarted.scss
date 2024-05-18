@@ -34,13 +34,25 @@
 }
 
 @media (min-width: 835px) and (max-width: 1024px) {
+  .company {
+    padding: 4rem 3rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 834px) {
+  .company {
+    padding: 4rem 2.8rem;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .company {
+    padding: 4rem 2.2rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .company {
+    padding: 4rem 1.8rem;
+  }
 }

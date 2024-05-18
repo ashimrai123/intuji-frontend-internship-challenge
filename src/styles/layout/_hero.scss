@@ -7,7 +7,7 @@
   overflow: hidden;
 
   &__text {
-    width: 37rem;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -87,7 +87,7 @@
 @media (min-width: 1025px) and (max-width: 1440px) {
   .hero {
     &__text {
-      max-width: 32rem;
+      width: 50%;
       gap: 2.9rem;
 
       &__heading {
@@ -130,8 +130,7 @@
     }
 
     &__img {
-      max-width: 27rem;
-      flex-grow: 1;
+      width: 50%;
     }
   }
 }
@@ -140,7 +139,7 @@
   .hero {
     padding: 7rem 3rem 0;
     &__text {
-      max-width: 27rem;
+      width: 50%;
       gap: 2.7rem;
 
       &__heading {
@@ -183,8 +182,7 @@
     }
 
     &__img {
-      max-width: 23rem;
-      flex-grow: 1;
+      width: 50%;
     }
   }
 }
@@ -193,7 +191,7 @@
   .hero {
     padding: 7rem 2.8rem 0;
     &__text {
-      max-width: 23rem;
+      width: 50%;
       gap: 2.2rem;
 
       &__heading {
@@ -236,8 +234,7 @@
     }
 
     &__img {
-      max-width: 21rem;
-      flex-grow: 1;
+      width: 50%;
     }
   }
 }
@@ -248,7 +245,6 @@
     flex-wrap: wrap;
     justify-content: center;
     &__text {
-      //   max-width: 23rem;
       width: 100%;
       gap: 2.2rem;
 
@@ -267,6 +263,7 @@
         gap: 1.4rem;
         &__start {
           padding: 0.8rem 2rem;
+          font-size: 0.8rem;
         }
         &__play {
           gap: 0.3rem;
@@ -275,6 +272,9 @@
             height: 0.8rem;
 
             padding: 0.8rem;
+          }
+          &__text {
+            font-size: 0.8rem;
           }
         }
       }
@@ -291,13 +291,15 @@
             height: 0.6rem;
             padding: 0.2rem;
           }
+          &__text {
+            font-size: 0.8rem;
+          }
         }
       }
     }
 
     &__img {
-      max-width: 18rem;
-      flex-grow: 1;
+      width: 50%;
     }
   }
 }
@@ -325,6 +327,7 @@
         gap: 1.4rem;
         &__start {
           padding: 0.8rem 2rem;
+          font-size: 0.8rem;
         }
         &__play {
           gap: 0.3rem;
@@ -333,6 +336,9 @@
             height: 0.8rem;
 
             padding: 0.8rem;
+          }
+          &__text {
+            font-size: 0.8rem;
           }
         }
       }
@@ -350,15 +356,14 @@
             padding: 0.15rem;
           }
           &__text {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
           }
         }
       }
     }
 
     &__img {
-      max-width: 14rem;
-      flex-grow: 1;
+      width: 50%;
     }
   }
 }
