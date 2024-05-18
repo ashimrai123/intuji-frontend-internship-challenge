@@ -304,14 +304,15 @@ li {
   gap: 5rem;
 }
 .footer__top {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 5rem;
   align-items: start;
   border-bottom: 2px solid #e5e5ea;
   padding-bottom: 5rem;
+  justify-content: space-between;
 }
 .footer__top__about {
+  width: 20%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -329,13 +330,13 @@ li {
   gap: 0.8rem;
 }
 .footer__top__company, .footer__top__resources {
+  width: 16%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 15rem;
 }
 .footer__top__company__head, .footer__top__resources__head {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .footer__top__company__body, .footer__top__resources__body {
@@ -345,6 +346,7 @@ li {
   gap: 1.5rem;
 }
 .footer__top__newsletter {
+  width: 35%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -357,6 +359,7 @@ li {
   display: flex;
 }
 .footer__top__newsletter__email__input {
+  background-color: #eeeeff;
   color: #3734a9;
   padding: 1rem;
   outline: none;
@@ -378,7 +381,6 @@ li {
 }
 .footer__top__newsletter__comment {
   color: #757095;
-  width: 16rem;
 }
 .footer__bot {
   display: flex;
@@ -386,6 +388,327 @@ li {
   justify-content: center;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .footer {
+    padding: 6rem 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .footer__top {
+    width: 100%;
+    gap: 5%;
+    padding-bottom: 5rem;
+  }
+  .footer__top__about {
+    gap: 1.5rem;
+  }
+  .footer__top__about__logo {
+    font-size: 1.1rem;
+  }
+  .footer__top__about__text {
+    font-size: 0.9rem;
+  }
+  .footer__top__about__socials {
+    gap: 0.8rem;
+  }
+  .footer__top__company, .footer__top__resources {
+    gap: 1.5rem;
+  }
+  .footer__top__company__head, .footer__top__resources__head {
+    font-size: 1.1rem;
+  }
+  .footer__top__company__body, .footer__top__resources__body {
+    gap: 1.5rem;
+  }
+  .footer__top__company__body__item, .footer__top__resources__body__item {
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter {
+    gap: 1.5rem;
+  }
+  .footer__top__newsletter__head {
+    font-size: 1.1rem;
+  }
+  .footer__top__newsletter__email__input {
+    padding: 1rem;
+  }
+  .footer__top__newsletter__email__input::placeholder {
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter__email__sub {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter__comment {
+    font-size: 0.9rem;
+  }
+  .footer__bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 835px) and (max-width: 1024px) {
+  .footer {
+    padding: 5rem 3rem 2.5rem;
+    gap: 2rem;
+  }
+  .footer__top {
+    width: 100%;
+    gap: 3%;
+    padding-bottom: 5rem;
+  }
+  .footer__top__about {
+    gap: 1.5rem;
+  }
+  .footer__top__about__logo {
+    font-size: 1rem;
+  }
+  .footer__top__about__text {
+    font-size: 0.8rem;
+  }
+  .footer__top__about__socials {
+    gap: 0.6rem;
+  }
+  .footer__top__company, .footer__top__resources {
+    gap: 1.3rem;
+  }
+  .footer__top__company__head, .footer__top__resources__head {
+    font-size: 1rem;
+  }
+  .footer__top__company__body, .footer__top__resources__body {
+    gap: 1.5rem;
+  }
+  .footer__top__company__body__item, .footer__top__resources__body__item {
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter {
+    gap: 1.5rem;
+  }
+  .footer__top__newsletter__head {
+    font-size: 1rem;
+  }
+  .footer__top__newsletter__email__input {
+    padding: 0.7rem;
+    width: 50%;
+  }
+  .footer__top__newsletter__email__input::placeholder {
+    font-size: 0.8rem;
+  }
+  .footer__top__newsletter__email__sub {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.8rem;
+  }
+  .footer__top__newsletter__comment {
+    font-size: 0.8rem;
+  }
+  .footer__bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__bot__copyright {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 834px) {
+  .footer {
+    padding: 5rem 2.8rem 2.5rem;
+    gap: 1.8rem;
+  }
+  .footer__top {
+    width: 100%;
+    gap: 1%;
+    padding-bottom: 4rem;
+  }
+  .footer__top__about {
+    gap: 1.3rem;
+  }
+  .footer__top__about__logo {
+    font-size: 0.8rem;
+  }
+  .footer__top__about__text {
+    font-size: 0.65rem;
+  }
+  .footer__top__about__socials {
+    gap: 0.3rem;
+  }
+  .footer__top__company, .footer__top__resources {
+    gap: 1rem;
+  }
+  .footer__top__company__head, .footer__top__resources__head {
+    font-size: 0.8rem;
+  }
+  .footer__top__company__body, .footer__top__resources__body {
+    gap: 1.2rem;
+  }
+  .footer__top__company__body__item, .footer__top__resources__body__item {
+    font-size: 0.65rem;
+  }
+  .footer__top__newsletter {
+    gap: 1.2rem;
+  }
+  .footer__top__newsletter__head {
+    font-size: 0.8rem;
+  }
+  .footer__top__newsletter__email__input {
+    padding: 0.5rem;
+    width: 50%;
+  }
+  .footer__top__newsletter__email__input::placeholder {
+    font-size: 0.8rem;
+  }
+  .footer__top__newsletter__email__sub {
+    padding: 0.3rem 1rem;
+    font-size: 0.65rem;
+  }
+  .footer__top__newsletter__comment {
+    font-size: 0.65rem;
+  }
+  .footer__bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__bot__copyright {
+    font-size: 0.65rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    padding: 5rem 2.8rem 2.5rem;
+    gap: 1.8rem;
+  }
+  .footer__top {
+    width: 100%;
+    padding-bottom: 4rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .footer__top__about {
+    width: 80%;
+    gap: 1.6rem;
+  }
+  .footer__top__about__logo {
+    font-size: 1.2rem;
+  }
+  .footer__top__about__text {
+    font-size: 0.9rem;
+  }
+  .footer__top__about__socials {
+    gap: 0.5rem;
+  }
+  .footer__top__company, .footer__top__resources {
+    width: 80%;
+    gap: 1rem;
+  }
+  .footer__top__company__head, .footer__top__resources__head {
+    font-size: 1.2rem;
+  }
+  .footer__top__company__body, .footer__top__resources__body {
+    gap: 1.2rem;
+  }
+  .footer__top__company__body__item, .footer__top__resources__body__item {
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter {
+    width: 80%;
+    gap: 1.2rem;
+  }
+  .footer__top__newsletter__head {
+    font-size: 1.2rem;
+  }
+  .footer__top__newsletter__email__input {
+    padding: 0.5rem;
+    width: 50%;
+  }
+  .footer__top__newsletter__email__input::placeholder {
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter__email__sub {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter__comment {
+    font-size: 0.9rem;
+  }
+  .footer__bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__bot__copyright {
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    padding: 5rem 2.2rem 2.5rem;
+    gap: 1.6rem;
+  }
+  .footer__top {
+    width: 100%;
+    padding-bottom: 3.5rem;
+    flex-direction: column;
+    gap: 2.6rem;
+  }
+  .footer__top__about {
+    width: 80%;
+    gap: 1.4rem;
+  }
+  .footer__top__about__logo {
+    font-size: 1.1rem;
+  }
+  .footer__top__about__text {
+    font-size: 0.9rem;
+  }
+  .footer__top__about__socials {
+    gap: 0.5rem;
+  }
+  .footer__top__company, .footer__top__resources {
+    width: 80%;
+    gap: 1rem;
+  }
+  .footer__top__company__head, .footer__top__resources__head {
+    font-size: 1.1rem;
+  }
+  .footer__top__company__body, .footer__top__resources__body {
+    gap: 1.1rem;
+  }
+  .footer__top__company__body__item, .footer__top__resources__body__item {
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter {
+    width: 80%;
+    gap: 1.1rem;
+  }
+  .footer__top__newsletter__head {
+    font-size: 1.1rem;
+  }
+  .footer__top__newsletter__email__input {
+    padding: 0.5rem;
+    width: 50%;
+  }
+  .footer__top__newsletter__email__input::placeholder {
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter__email__sub {
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+  }
+  .footer__top__newsletter__comment {
+    font-size: 0.9rem;
+  }
+  .footer__bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer__bot__copyright {
+    font-size: 0.65rem;
+  }
+}
 .hero {
   background: linear-gradient(to right, #c9e7f2, #91cfe5);
   display: flex;

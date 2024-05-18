@@ -4,13 +4,14 @@
   flex-direction: column;
   gap: 5rem;
   &__top {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
     align-items: start;
     border-bottom: 2px solid #e5e5ea;
     padding-bottom: 5rem;
+    justify-content: space-between;
     &__about {
+      width: 20%;
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -25,27 +26,18 @@
         display: flex;
         align-items: center;
         gap: 0.8rem;
-        &__linkedin,
-        &__messenger,
-        &__twitter,
-        &__meta {
-        }
-        &__linkedin:hover,
-        &__messenger:hover,
-        &__twitter:hover,
-        &__meta:hover {
-        }
       }
     }
     &__company,
     &__resources {
+      width: 16%;
+
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      width: 15rem;
 
       &__head {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 700;
       }
       &__body {
@@ -57,6 +49,8 @@
       }
     }
     &__newsletter {
+      width: 35%;
+
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
@@ -67,13 +61,12 @@
       &__email {
         display: flex;
         &__input {
+          background-color: #eeeeff;
           color: #3734a9;
           padding: 1rem;
           outline: none;
           border: none;
           caret-color: #3734a9;
-
-          //   placehol
         }
         &__input::placeholder {
           color: #757095;
@@ -91,7 +84,6 @@
       }
       &__comment {
         color: #757095;
-        width: 16rem;
       }
     }
   }
@@ -106,16 +98,359 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
+  .footer {
+    padding: 6rem 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    &__top {
+      width: 100%;
+      gap: 5%;
+      padding-bottom: 5rem;
+      &__about {
+        gap: 1.5rem;
+        &__logo {
+          font-size: 1.1rem;
+        }
+        &__text {
+          font-size: 0.9rem;
+        }
+        &__socials {
+          gap: 0.8rem;
+        }
+      }
+      &__company,
+      &__resources {
+        gap: 1.5rem;
+
+        &__head {
+          font-size: 1.1rem;
+        }
+        &__body {
+          gap: 1.5rem;
+          &__item {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      &__newsletter {
+        gap: 1.5rem;
+        &__head {
+          font-size: 1.1rem;
+        }
+        &__email {
+          &__input {
+            padding: 1rem;
+          }
+          &__input::placeholder {
+            font-size: 0.9rem;
+          }
+
+          &__sub {
+            padding: 0.6rem 1.5rem;
+            font-size: 0.9rem;
+          }
+        }
+        &__comment {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    &__bot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 @media (min-width: 835px) and (max-width: 1024px) {
-}
+  .footer {
+    padding: 5rem 3rem 2.5rem;
 
+    gap: 2rem;
+    &__top {
+      width: 100%;
+      gap: 3%;
+      padding-bottom: 5rem;
+      &__about {
+        gap: 1.5rem;
+        &__logo {
+          font-size: 1rem;
+        }
+        &__text {
+          font-size: 0.8rem;
+        }
+        &__socials {
+          gap: 0.6rem;
+        }
+      }
+      &__company,
+      &__resources {
+        gap: 1.3rem;
+
+        &__head {
+          font-size: 1rem;
+        }
+        &__body {
+          gap: 1.5rem;
+          &__item {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      &__newsletter {
+        gap: 1.5rem;
+        &__head {
+          font-size: 1rem;
+        }
+        &__email {
+          &__input {
+            padding: 0.7rem;
+            width: 50%;
+          }
+          &__input::placeholder {
+            font-size: 0.8rem;
+          }
+
+          &__sub {
+            padding: 0.4rem 1.2rem;
+            font-size: 0.8rem;
+          }
+        }
+        &__comment {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    &__bot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__copyright {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
 @media (min-width: 769px) and (max-width: 834px) {
+  .footer {
+    padding: 5rem 2.8rem 2.5rem;
+
+    gap: 1.8rem;
+    &__top {
+      width: 100%;
+      gap: 1%;
+      padding-bottom: 4rem;
+      &__about {
+        gap: 1.3rem;
+        &__logo {
+          font-size: 0.8rem;
+        }
+        &__text {
+          font-size: 0.65rem;
+        }
+        &__socials {
+          gap: 0.3rem;
+        }
+      }
+      &__company,
+      &__resources {
+        gap: 1rem;
+
+        &__head {
+          font-size: 0.8rem;
+        }
+        &__body {
+          gap: 1.2rem;
+          &__item {
+            font-size: 0.65rem;
+          }
+        }
+      }
+      &__newsletter {
+        gap: 1.2rem;
+        &__head {
+          font-size: 0.8rem;
+        }
+        &__email {
+          &__input {
+            padding: 0.5rem;
+            width: 50%;
+          }
+          &__input::placeholder {
+            font-size: 0.8rem;
+          }
+
+          &__sub {
+            padding: 0.3rem 1rem;
+            font-size: 0.65rem;
+          }
+        }
+        &__comment {
+          font-size: 0.65rem;
+        }
+      }
+    }
+    &__bot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__copyright {
+        font-size: 0.65rem;
+      }
+    }
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    padding: 5rem 2.8rem 2.5rem;
+
+    gap: 1.8rem;
+    &__top {
+      width: 100%;
+      padding-bottom: 4rem;
+      flex-direction: column;
+      gap: 3rem;
+      &__about {
+        width: 80%;
+        gap: 1.6rem;
+        &__logo {
+          font-size: 1.2rem;
+        }
+        &__text {
+          font-size: 0.9rem;
+        }
+        &__socials {
+          gap: 0.5rem;
+        }
+      }
+      &__company,
+      &__resources {
+        width: 80%;
+
+        gap: 1rem;
+
+        &__head {
+          font-size: 1.2rem;
+        }
+        &__body {
+          gap: 1.2rem;
+          &__item {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      &__newsletter {
+        width: 80%;
+
+        gap: 1.2rem;
+        &__head {
+          font-size: 1.2rem;
+        }
+        &__email {
+          &__input {
+            padding: 0.5rem;
+            width: 50%;
+          }
+          &__input::placeholder {
+            font-size: 0.9rem;
+          }
+
+          &__sub {
+            padding: 0.3rem 1rem;
+            font-size: 0.9rem;
+          }
+        }
+        &__comment {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    &__bot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__copyright {
+        font-size: 0.65rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
+  .footer {
+    padding: 5rem 2.2rem 2.5rem;
+
+    gap: 1.6rem;
+    &__top {
+      width: 100%;
+      padding-bottom: 3.5rem;
+      flex-direction: column;
+      gap: 2.6rem;
+      &__about {
+        width: 80%;
+        gap: 1.4rem;
+        &__logo {
+          font-size: 1.1rem;
+        }
+        &__text {
+          font-size: 0.9rem;
+        }
+        &__socials {
+          gap: 0.5rem;
+        }
+      }
+      &__company,
+      &__resources {
+        width: 80%;
+
+        gap: 1rem;
+
+        &__head {
+          font-size: 1.1rem;
+        }
+        &__body {
+          gap: 1.1rem;
+          &__item {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      &__newsletter {
+        width: 80%;
+
+        gap: 1.1rem;
+        &__head {
+          font-size: 1.1rem;
+        }
+        &__email {
+          &__input {
+            padding: 0.5rem;
+            width: 50%;
+          }
+          &__input::placeholder {
+            font-size: 0.9rem;
+          }
+
+          &__sub {
+            padding: 0.3rem 1rem;
+            font-size: 0.9rem;
+          }
+        }
+        &__comment {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    &__bot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__copyright {
+        font-size: 0.65rem;
+      }
+    }
+  }
 }
