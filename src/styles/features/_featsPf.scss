@@ -11,15 +11,14 @@
       justify-content: space-between;
       align-items: center;
       gap: 2rem;
-      flex-wrap: wrap;
       &__topic {
         display: flex;
         flex-direction: column;
-        width: 32rem;
+        width: 50%;
         gap: 1.3rem;
         &__heading {
-          font-size: 3.8rem;
-          font-weight: bold;
+          font-size: 3.5rem;
+          font-weight: 800;
         }
         &__body {
           font-size: 1rem;
@@ -27,9 +26,8 @@
       }
       &__quote {
         position: relative;
-        width: 23rem;
+        width: 40%;
         background-color: #c4c4c4;
-        height: 9 rem;
         padding: 2rem;
         border-radius: 1.5rem;
         display: flex;
@@ -55,21 +53,22 @@
     }
     &__icons {
       display: flex;
-      // gap: 2rem;
       justify-content: space-between;
+      align-items: start;
 
-      flex-wrap: wrap;
       &__connect,
       &__review,
       &__income {
         width: 18rem;
         background-color: #ffff;
         display: flex;
+        flex: 1;
+
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         gap: 1.5rem;
-        padding: 5rem 3rem 3rem 3rem;
+        padding: 5rem 1.8rem 3rem 1.8rem;
         border-radius: 10%;
         position: relative;
         &__no {
@@ -82,15 +81,19 @@
         &__icon {
           width: 4rem;
         }
-        &__head {
-          font-size: 2rem;
-          text-align: center;
-          font-weight: bold;
-        }
+        &__detail {
+          &__head {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+          }
 
-        &__body {
-          text-align: center;
-          color: #757095;
+          &__body {
+            padding-top: 1.5rem;
+
+            text-align: center;
+            color: #757095;
+          }
         }
         transition: transform 0.3s ease, background-color 0.3s ease;
       }
@@ -111,25 +114,316 @@
 }
 
 @media (min-width: 835px) and (max-width: 1024px) {
-  .company {
-    padding: 4rem 3rem;
+  .feats {
+    padding: 6rem 2.8rem;
+
+    &__pf {
+      &__head {
+        padding: 1rem 0 5rem 0;
+        gap: 2rem;
+        &__topic {
+          width: 55%;
+          gap: 1.3rem;
+          &__heading {
+            font-size: 3rem;
+            font-weight: 800;
+          }
+          &__body {
+            font-size: 1rem;
+          }
+        }
+        &__quote {
+          padding: 1.8rem;
+          border-radius: 1.5rem;
+          width: 40%;
+
+          gap: 1.8rem;
+          &__img {
+            height: 1.5rem;
+            padding: 0.65rem 0.5rem 0.7rem 1rem;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: -1.5rem;
+          }
+          &__text {
+            font-size: 1rem;
+          }
+          &__author {
+          }
+        }
+      }
+      &__icons {
+        &__connect,
+        &__review,
+        &__income {
+          width: 18rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 1.5rem;
+          padding: 3rem 1.2rem 2rem 1.2rem;
+          &__no {
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+          }
+
+          &__icon {
+            width: 3.4rem;
+          }
+          &__detail {
+            &__head {
+              font-size: 1.7rem;
+              text-align: center;
+              font-weight: bold;
+            }
+
+            &__body {
+              padding-top: 1.5rem;
+
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 769px) and (max-width: 834px) {
-  .company {
-    padding: 4rem 2.8rem;
+  .feats {
+    padding: 6rem 2.8rem;
+
+    &__pf {
+      &__head {
+        padding: 1rem 0 5rem 0;
+        gap: 2rem;
+        &__topic {
+          width: 55%;
+          gap: 1.3rem;
+          &__heading {
+            font-size: 2.5rem;
+            font-weight: 800;
+          }
+          &__body {
+            font-size: 0.9rem;
+          }
+        }
+        &__quote {
+          padding: 1.6rem;
+          border-radius: 1.5rem;
+          gap: 1.6rem;
+          &__img {
+            height: 1.5rem;
+            padding: 0.65rem 0.5rem 0.7rem 1rem;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: -1.5rem;
+          }
+          &__text {
+            font-size: 1rem;
+          }
+          &__author {
+          }
+        }
+      }
+      &__icons {
+        &__connect,
+        &__review,
+        &__income {
+          width: 18rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 1.5rem;
+          padding: 3rem 1rem 2rem 1rem;
+          &__no {
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+          &__icon {
+            width: 3.4rem;
+          }
+          &__detail {
+            &__head {
+              font-size: 1.5rem;
+              text-align: center;
+              font-weight: bold;
+            }
+
+            &__body {
+              padding-top: 1.5rem;
+
+              text-align: center;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .company {
-    padding: 4rem 2.2rem;
+  .feats {
+    padding: 3.2rem 2.2rem;
+
+    &__pf {
+      &__head {
+        padding: 1rem 0 5rem 0;
+        gap: 4rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__topic {
+          width: 100%;
+          gap: 1.3rem;
+          display: flex;
+          &__heading {
+            font-size: 2.2rem;
+            font-weight: 800;
+          }
+          &__body {
+            font-size: 0.9rem;
+          }
+        }
+        &__quote {
+          padding: 1.3rem;
+          border-radius: 1.4rem;
+          gap: 1.6rem;
+          width: 70%;
+
+          &__text,
+          &__author {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      &__icons {
+        flex-direction: column;
+        align-items: center;
+        &__connect,
+        &__review,
+        &__income {
+          width: 80%;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+          padding: 3rem 1.5rem 1.5rem 1.5rem;
+          border-radius: 1.5rem;
+          position: relative;
+          &__no {
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          &__icon {
+            width: 8rem;
+          }
+          &__detail {
+            &__head {
+              font-size: 1.3rem;
+              text-align: center;
+              font-weight: bold;
+            }
+
+            &__body {
+              padding-top: 1.5rem;
+              font-size: 0.9rem;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
-  .company {
-    padding: 4rem 1.8rem;
+  .feats {
+    padding: 3.2rem 1.8rem;
+
+    &__pf {
+      &__head {
+        padding: 1rem 0 3rem 0;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__topic {
+          width: 100%;
+          gap: 1.3rem;
+          display: flex;
+          &__heading {
+            font-size: 2rem;
+            font-weight: 800;
+          }
+          &__body {
+            font-size: 0.8rem;
+          }
+        }
+        &__quote {
+          padding: 1.3rem;
+          border-radius: 1.4rem;
+          gap: 1.4rem;
+          width: 70%;
+
+          &__text,
+          &__author {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      &__icons {
+        flex-direction: column;
+        align-items: center;
+        &__connect,
+        &__review,
+        &__income {
+          width: 18rem;
+          background-color: #ffff;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 1.5rem;
+          padding: 3rem 1.5rem 2rem 1.5rem;
+          border-radius: 1.5rem;
+          position: relative;
+          &__no {
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+          &__icon {
+            width: 3rem;
+          }
+          &__detail {
+            &__head {
+              font-size: 1rem;
+              text-align: center;
+            }
+
+            &__body {
+              padding-top: 1.5rem;
+              text-align: center;
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
