@@ -9,6 +9,7 @@
     &__img {
       animation: bounce 1.5s ease-in-out infinite;
       width: 60%;
+      flex-grow: 1;
     }
     &__text {
       display: flex;

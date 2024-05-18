@@ -903,6 +903,7 @@ li {
 .feats__payments__img {
   animation: bounce 1.5s ease-in-out infinite;
   width: 60%;
+  flex-grow: 1;
 }
 .feats__payments__text {
   display: flex;
@@ -1428,16 +1429,15 @@ li {
 }
 .feats__transactions {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 6rem;
 }
 .feats__transactions__text {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  max-width: 36rem;
-  width: 100%;
+  gap: 1rem;
+  width: 40%;
 }
 .feats__transactions__text__subtitle {
   color: #3734a9;
@@ -1452,8 +1452,6 @@ li {
 }
 .feats__transactions__text__quote {
   position: relative;
-  max-width: 23rem;
-  width: 100%;
   background-color: #c4c4c4;
   height: 9 rem;
   padding: 2rem;
@@ -1477,28 +1475,148 @@ li {
   background-color: #989898;
 }
 .feats__transactions__img {
-  width: 100%;
-  max-width: 36rem;
+  width: 60%;
+  flex-grow: 1;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .feats__transactions__text {
+    width: 40%;
+  }
+  .feats__transactions__text__head {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .feats__transactions__text__body {
+    padding-bottom: 2rem;
+  }
+  .feats__transactions__text__quote {
+    height: 9 rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .feats__transactions__text__quote__text {
+    font-size: 1rem;
+  }
+  .feats__transactions__img {
+    width: 60%;
+    flex-grow: 1;
+  }
+}
 @media (min-width: 835px) and (max-width: 1024px) {
-  .company {
-    padding: 4rem 3rem;
+  .feats__transactions__text {
+    width: 40%;
+  }
+  .feats__transactions__text__head {
+    font-size: 2.7rem;
+    font-weight: 700;
+  }
+  .feats__transactions__text__body {
+    padding-bottom: 2rem;
+  }
+  .feats__transactions__text__quote {
+    height: 9 rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .feats__transactions__text__quote__text {
+    font-size: 1rem;
+  }
+  .feats__transactions__img {
+    width: 60%;
+    flex-grow: 1;
   }
 }
 @media (min-width: 769px) and (max-width: 834px) {
-  .company {
-    padding: 4rem 2.8rem;
+  .feats__transactions__text {
+    width: 40%;
+  }
+  .feats__transactions__text__head {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  .feats__transactions__text__body {
+    padding-bottom: 2rem;
+  }
+  .feats__transactions__text__quote {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .feats__transactions__text__quote__text {
+    font-size: 1rem;
+  }
+  .feats__transactions__img {
+    width: 60%;
+    flex-grow: 1;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .company {
-    padding: 4rem 2.2rem;
+  .feats__transactions {
+    flex-direction: column;
+  }
+  .feats__transactions__text {
+    width: 80%;
+  }
+  .feats__transactions__text__head {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .feats__transactions__text__body {
+    padding-bottom: 2rem;
+  }
+  .feats__transactions__text__quote {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+  }
+  .feats__transactions__text__quote__text {
+    font-size: 0.9rem;
+  }
+  .feats__transactions__text__quote__author {
+    font-size: 0.9rem;
+  }
+  .feats__transactions__img {
+    width: 80%;
+    flex-grow: 1;
   }
 }
 @media (max-width: 480px) {
-  .company {
-    padding: 4rem 1.8rem;
+  .feats__transactions {
+    flex-direction: column;
+  }
+  .feats__transactions__text {
+    width: 80%;
+  }
+  .feats__transactions__text__head {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .feats__transactions__text__body {
+    padding-bottom: 2rem;
+  }
+  .feats__transactions__text__quote {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+  }
+  .feats__transactions__text__quote__text {
+    font-size: 0.7rem;
+  }
+  .feats__transactions__text__quote__author {
+    font-size: 0.7rem;
+  }
+  .feats__transactions__img {
+    width: 80%;
+    flex-grow: 1;
   }
 }
 .tes {

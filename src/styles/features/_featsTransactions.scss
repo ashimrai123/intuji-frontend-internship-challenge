@@ -1,15 +1,14 @@
 .feats {
   &__transactions {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 6rem;
     &__text {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
-      max-width: 36rem;
-      width: 100%;
+      gap: 1rem;
+      width: 40%;
       &__subtitle {
         color: #3734a9;
         font-weight: 700;
@@ -23,8 +22,6 @@
       }
       &__quote {
         position: relative;
-        max-width: 23rem;
-        width: 100%;
         background-color: #c4c4c4;
         height: 9 rem;
         padding: 2rem;
@@ -51,8 +48,8 @@
       }
     }
     &__img {
-      width: 100%;
-      max-width: 36rem;
+      width: 60%;
+      flex-grow: 1;
     }
   }
 }
@@ -61,28 +58,190 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
+  .feats {
+    &__transactions {
+      &__text {
+        width: 40%;
+        &__subtitle {
+        }
+        &__head {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+        &__body {
+          padding-bottom: 2rem;
+        }
+        &__quote {
+          height: 9 rem;
+          padding: 2rem;
+          border-radius: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          &__img {
+          }
+          &__text {
+            font-size: 1rem;
+          }
+          &__author {
+          }
+        }
+      }
+      &__img {
+        width: 60%;
+        flex-grow: 1;
+      }
+    }
+  }
 }
 
 @media (min-width: 835px) and (max-width: 1024px) {
-  .company {
-    padding: 4rem 3rem;
+  .feats {
+    &__transactions {
+      &__text {
+        width: 40%;
+        &__subtitle {
+        }
+        &__head {
+          font-size: 2.7rem;
+          font-weight: 700;
+        }
+        &__body {
+          padding-bottom: 2rem;
+        }
+        &__quote {
+          height: 9 rem;
+          padding: 2rem;
+          border-radius: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          &__img {
+          }
+          &__text {
+            font-size: 1rem;
+          }
+          &__author {
+          }
+        }
+      }
+      &__img {
+        width: 60%;
+        flex-grow: 1;
+      }
+    }
   }
 }
 
 @media (min-width: 769px) and (max-width: 834px) {
-  .company {
-    padding: 4rem 2.8rem;
+  .feats {
+    &__transactions {
+      &__text {
+        width: 40%;
+        &__subtitle {
+        }
+        &__head {
+          font-size: 2.4rem;
+          font-weight: 700;
+        }
+        &__body {
+          padding-bottom: 2rem;
+        }
+        &__quote {
+          padding: 1.5rem;
+          border-radius: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          &__img {
+          }
+          &__text {
+            font-size: 1rem;
+          }
+          &__author {
+          }
+        }
+      }
+      &__img {
+        width: 60%;
+        flex-grow: 1;
+      }
+    }
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .company {
-    padding: 4rem 2.2rem;
+  .feats {
+    &__transactions {
+      flex-direction: column;
+      &__text {
+        width: 80%;
+
+        &__subtitle {
+        }
+        &__head {
+          font-size: 2.2rem;
+          font-weight: 700;
+        }
+        &__body {
+          padding-bottom: 2rem;
+        }
+        &__quote {
+          padding: 1.5rem;
+          border-radius: 1.5rem;
+          gap: 1.5rem;
+          &__img {
+          }
+          &__text {
+            font-size: 0.9rem;
+          }
+          &__author {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      &__img {
+        width: 80%;
+        flex-grow: 1;
+      }
+    }
   }
 }
 
 @media (max-width: 480px) {
-  .company {
-    padding: 4rem 1.8rem;
+  .feats {
+    &__transactions {
+      flex-direction: column;
+      &__text {
+        width: 80%;
+
+        &__subtitle {
+        }
+        &__head {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        &__body {
+          padding-bottom: 2rem;
+        }
+        &__quote {
+          padding: 1.5rem;
+          border-radius: 1.5rem;
+          gap: 1.5rem;
+          &__img {
+          }
+          &__text {
+            font-size: 0.7rem;
+          }
+          &__author {
+            font-size: 0.7rem;
+          }
+        }
+      }
+      &__img {
+        width: 80%;
+        flex-grow: 1;
+      }
+    }
   }
 }
