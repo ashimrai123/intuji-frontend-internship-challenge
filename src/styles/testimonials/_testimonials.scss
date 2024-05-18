@@ -6,9 +6,8 @@
   gap: 2.8rem;
   &__img {
     position: absolute;
-    right: 8rem;
+    right: 10%;
     height: 7rem;
-    z-index: -1;
   }
   &__head {
     font-size: 3.2rem;
@@ -81,7 +80,7 @@
 
     gap: 2.8rem;
     &__img {
-      right: 8rem;
+      right: 10%;
     }
     &__head {
       font-size: 3rem;
@@ -124,7 +123,7 @@
 
     gap: 2.8rem;
     &__img {
-      right: 6rem;
+      right: 10%;
     }
     &__head {
       font-size: 2.5rem;
@@ -163,7 +162,7 @@
 
     gap: 2.8rem;
     &__img {
-      right: 3.4rem;
+      right: 10%;
       height: 6rem;
     }
     &__head {
@@ -205,8 +204,8 @@
 
     gap: 2.8rem;
     &__img {
-      right: 2rem;
-      height: 4rem;
+      right: 10%;
+      height: 10%;
     }
     &__head {
       font-size: 2rem;

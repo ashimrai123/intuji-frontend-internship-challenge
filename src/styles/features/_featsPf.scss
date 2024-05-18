@@ -126,7 +126,6 @@
           gap: 1.3rem;
           &__heading {
             font-size: 3rem;
-            font-weight: 800;
           }
           &__body {
             font-size: 1rem;
@@ -136,20 +135,10 @@
           padding: 1.8rem;
           border-radius: 1.5rem;
           width: 40%;
-
           gap: 1.8rem;
-          &__img {
-            height: 1.5rem;
-            padding: 0.65rem 0.5rem 0.7rem 1rem;
-            border-radius: 50%;
-            background-color: black;
-            position: absolute;
-            top: -1.5rem;
-          }
+
           &__text {
             font-size: 1rem;
-          }
-          &__author {
           }
         }
       }
