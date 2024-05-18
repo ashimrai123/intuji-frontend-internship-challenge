@@ -1,7 +1,7 @@
 .feats {
   display: flex;
   flex-direction: column;
-  padding: 6rem 4rem;
+  padding: 5rem 4rem;
   background-color: #fafbff;
 
   &__pf {
@@ -115,7 +115,7 @@
 
 @media (min-width: 835px) and (max-width: 1024px) {
   .feats {
-    padding: 6rem 2.8rem;
+    padding: 5rem 2.8rem;
 
     &__pf {
       &__head {
@@ -196,7 +196,7 @@
 
 @media (min-width: 769px) and (max-width: 834px) {
   .feats {
-    padding: 6rem 2.8rem;
+    padding: 5rem 2.8rem;
 
     &__pf {
       &__head {
@@ -279,7 +279,7 @@
 
     &__pf {
       &__head {
-        padding: 1rem 0 5rem 0;
+        padding: 1rem 0 2rem 0;
         gap: 4rem;
         flex-wrap: wrap;
         justify-content: center;
@@ -356,7 +356,7 @@
 
     &__pf {
       &__head {
-        padding: 1rem 0 3rem 0;
+        padding: 1rem 0 2rem 0;
         gap: 3rem;
         flex-wrap: wrap;
         justify-content: center;

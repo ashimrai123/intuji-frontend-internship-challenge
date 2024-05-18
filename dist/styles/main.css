@@ -895,21 +895,19 @@ li {
 }
 .feats__payments {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 .feats__payments__img {
   animation: bounce 1.5s ease-in-out infinite;
-  width: 100%;
-  max-width: 38rem;
+  width: 60%;
 }
 .feats__payments__text {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 38rem;
+  width: 40%;
   gap: 1rem;
 }
 .feats__payments__text__subtitle {
@@ -917,8 +915,8 @@ li {
   color: #3734a9;
 }
 .feats__payments__text__head {
-  font-size: 3.4rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 800;
 }
 .feats__payments__text__body {
   color: #505887;
@@ -955,29 +953,126 @@ li {
   }
 }
 @media (min-width: 835px) and (max-width: 1024px) {
-  .company {
-    padding: 4rem 3rem;
+  .feats__payments__img {
+    width: 60%;
+    flex-grow: 1;
+  }
+  .feats__payments__text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+  }
+  .feats__payments__text__head {
+    font-size: 2.8rem;
+  }
+  .feats__payments__text__lists {
+    gap: 1rem;
+  }
+  .feats__payments__text__lists__list {
+    gap: 1rem;
+  }
+  .feats__payments__text__lists__list__check {
+    height: 1rem;
+    padding: 0.4rem;
   }
 }
 @media (min-width: 769px) and (max-width: 834px) {
-  .company {
-    padding: 4rem 2.8rem;
+  .feats__payments__img {
+    width: 60%;
+    flex-grow: 1;
+  }
+  .feats__payments__text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+  }
+  .feats__payments__text__head {
+    font-size: 2.4rem;
+  }
+  .feats__payments__text__lists {
+    gap: 1rem;
+  }
+  .feats__payments__text__lists__list {
+    gap: 1rem;
+  }
+  .feats__payments__text__lists__list__check {
+    height: 1rem;
+    padding: 0.4rem;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .company {
-    padding: 4rem 2.2rem;
+  .feats__payments {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .feats__payments__img {
+    width: 80%;
+    flex-grow: 1;
+  }
+  .feats__payments__text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1rem;
+  }
+  .feats__payments__text__head {
+    font-size: 2.2rem;
+  }
+  .feats__payments__text__lists {
+    gap: 1rem;
+  }
+  .feats__payments__text__lists__list {
+    gap: 1rem;
+  }
+  .feats__payments__text__lists__list__check {
+    height: 1rem;
+    padding: 0.4rem;
   }
 }
 @media (max-width: 480px) {
-  .company {
-    padding: 4rem 1.8rem;
+  .feats__payments {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .feats__payments__img {
+    width: 80%;
+    flex-grow: 1;
+  }
+  .feats__payments__text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 1rem;
+  }
+  .feats__payments__text__subtitle {
+    font-size: 0.9rem;
+  }
+  .feats__payments__text__head {
+    font-size: 2rem;
+  }
+  .feats__payments__text__body {
+    font-size: 0.9rem;
+  }
+  .feats__payments__text__lists {
+    gap: 1rem;
+  }
+  .feats__payments__text__lists__list {
+    gap: 1rem;
+  }
+  .feats__payments__text__lists__list__check {
+    height: 0.9rem;
+    padding: 0.3rem;
+  }
+  .feats__payments__text__lists__list__text {
+    font-size: 0.9rem;
   }
 }
 .feats {
   display: flex;
   flex-direction: column;
-  padding: 6rem 4rem;
+  padding: 5rem 4rem;
   background-color: #fafbff;
 }
 .feats__pf__head {
@@ -1070,7 +1165,7 @@ li {
 
 @media (min-width: 835px) and (max-width: 1024px) {
   .feats {
-    padding: 6rem 2.8rem;
+    padding: 5rem 2.8rem;
   }
   .feats__pf__head {
     padding: 1rem 0 5rem 0;
@@ -1135,7 +1230,7 @@ li {
 }
 @media (min-width: 769px) and (max-width: 834px) {
   .feats {
-    padding: 6rem 2.8rem;
+    padding: 5rem 2.8rem;
   }
   .feats__pf__head {
     padding: 1rem 0 5rem 0;
@@ -1203,7 +1298,7 @@ li {
     padding: 3.2rem 2.2rem;
   }
   .feats__pf__head {
-    padding: 1rem 0 5rem 0;
+    padding: 1rem 0 2rem 0;
     gap: 4rem;
     flex-wrap: wrap;
     justify-content: center;
@@ -1269,7 +1364,7 @@ li {
     padding: 3.2rem 1.8rem;
   }
   .feats__pf__head {
-    padding: 1rem 0 3rem 0;
+    padding: 1rem 0 2rem 0;
     gap: 3rem;
     flex-wrap: wrap;
     justify-content: center;
